@@ -72,6 +72,8 @@ Mọi đóng góp đều rất hoan nghênh! Nếu bạn muốn:
 
 Hãy xem hướng dẫn trong file [CONTRIBUTING_vi.md](CONTRIBUTING_vi.md).
 
+Trước khi gửi pull request, vui lòng đọc kỹ [Quy định nội dung Pull Request](PULL_REQUEST_RULES_vi.md) để biết những gì được chấp nhận. ✅
+
 ---
 
 ## 📜 Giấy phép

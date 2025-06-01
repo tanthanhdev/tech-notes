@@ -25,8 +25,6 @@ Vui lòng đọc kỹ trước khi gửi PR.
   - Dùng hậu tố `_vi.md`, `_ja.md`, v.v.
   - Nội dung bám sát logic file gốc
 
----
-
 ## ❌ Không được phép trong Pull Request
 
 - ❌ **Nội dung tạo bởi AI** mà không qua chỉnh sửa thủ công hoặc kiểm duyệt
@@ -37,8 +35,6 @@ Vui lòng đọc kỹ trước khi gửi PR.
 - ❌ File đặt tên sai quy tắc, không dùng định dạng Markdown hợp lệ
 - ❌ Nội dung **sao chép có bản quyền** từ nguồn khác
 
----
-
 ## 🔖 Lưu ý về cấu trúc & định dạng
 
 - Trình bày **ngắn gọn, dễ hiểu, gần gũi**
@@ -46,8 +42,6 @@ Vui lòng đọc kỹ trước khi gửi PR.
 - Đặt tên file bằng chữ thường, dùng dấu gạch ngang: `cay-nhi-phan.md`
 - File dịch có hậu tố ngôn ngữ: `cay-nhi-phan_vi.md`
 - Đặt đúng thư mục chuyên đề (`algorithms/`, `design-patterns/`, `aws/`,...)
-
----
 
 ## 📢 Lưu ý cuối
 

@@ -71,6 +71,8 @@ Contributions are highly welcome! If you want to:
 
 Please follow the guidelines in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
+Before submitting a pull request, make sure to check the [Pull Request Rules](PULL_REQUEST_RULES.md) to see what's allowed. ✅
+
 ---
 
 ## 📜 License

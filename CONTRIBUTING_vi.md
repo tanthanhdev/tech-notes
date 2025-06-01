@@ -81,7 +81,7 @@ Tôn trọng, cởi mở và xây dựng trong mọi tương tác. Chúng ta đa
 
 ## 📩 Cần hỗ trợ?
 
-Nếu bạn có thắc mắc hoặc ý tưởng, hãy [tạo issue mới](https://github.com/tanthanhdev/tech-notes-hub/issues).
+Nếu bạn có thắc mắc hoặc ý tưởng, hãy [tạo issue mới](https://github.com/tech-notes-hub/tech-notes/issues).
 
 Một lần nữa, cảm ơn bạn đã đóng góp cho **Tech Notes Hub**! 🙌
 

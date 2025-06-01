@@ -80,7 +80,7 @@ Be respectful, open-minded, and constructive in your interactions. We’re build
 
 ## 📩 Need Help?
 
-Feel free to [open an issue](https://github.com/tanthanhdev/tech-notes-hub/issues) if you have questions, ideas, or feedback.
+Feel free to [open an issue](https://github.com/tech-notes-hub/tech-notes/issues) if you have questions, ideas, or feedback.
 
 Thanks for contributing to **Tech Notes Hub**! 🙌
 

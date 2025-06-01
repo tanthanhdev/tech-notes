@@ -1,0 +1,59 @@
+# Node modules (if using any JS tools)
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+
+# VSCode settings
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Build output
+dist/
+build/
+
+# Jupyter notebooks checkpoints (if any)
+.ipynb_checkpoints/
+
+# Coverage reports
+htmlcov/
+coverage.xml
+*.cover
+
+# dotenv environment files
+.env.local
+.env.*
+
+# Ignore generated files and backups
+*.orig
+*.rej
+
+# Ignore public site build if using static site generator (optional)
+public/
+.cache/
+
+# Ignore Markdown preview temp files (e.g., Typora)
+*.assets/
+
+# Ignore personal notes or drafts
+private-notes/
+drafts/

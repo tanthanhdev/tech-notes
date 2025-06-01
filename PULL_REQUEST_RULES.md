@@ -25,8 +25,6 @@ Please read carefully before submitting a PR.
   - Translations with `_vi.md`, `_fr.md`, etc. suffix
   - Must match the structure and logic of the original file
 
----
-
 ## ❌ Not Allowed in Pull Requests
 
 - ❌ **AI-generated content** without human review or editing
@@ -37,8 +35,6 @@ Please read carefully before submitting a PR.
 - ❌ Files with broken structure, invalid markdown, or irrelevant naming
 - ❌ Notes that contain **plagiarized content** (copying from copyrighted materials)
 
----
-
 ## 🔖 Style & Structure Reminders
 
 - Use clear, **conversational but concise** explanations
@@ -46,8 +42,6 @@ Please read carefully before submitting a PR.
 - Name files using lowercase and hyphens: `binary-search.md`
 - For translated files, append language suffix: `binary-search_vi.md`
 - Place content in the appropriate folder (`algorithms/`, `design-patterns/`, etc.)
-
----
 
 ## 📢 Final Note
 

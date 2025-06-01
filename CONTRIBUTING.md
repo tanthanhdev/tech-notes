@@ -83,5 +83,3 @@ Be respectful, open-minded, and constructive in your interactions. We’re build
 Feel free to [open an issue](https://github.com/tech-notes-hub/tech-notes/issues) if you have questions, ideas, or feedback.
 
 Thanks for contributing to **Tech Notes Hub**! 🙌
-
-If you want me to write a `CONTRIBUTING_vi.md` file (Vietnamese version) in this format, I can help you right away. You can also request to create a template for pull request or issue if you want to be more professional.

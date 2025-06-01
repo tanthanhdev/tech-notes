@@ -23,8 +23,6 @@
 
 Dự án được thiết kế để trở thành tài nguyên tham khảo hàng đầu của bạn — dù là khi học, làm dự án, hay chuẩn bị phỏng vấn.
 
----
-
 ## 🚀 Tính năng
 
 * Ghi chú rõ ràng, có cấu trúc khoa học
@@ -32,8 +30,6 @@ Dự án được thiết kế để trở thành tài nguyên tham khảo hàng
 * Ý tưởng không phụ thuộc ngôn ngữ, có kèm mã ví dụ bằng các ngôn ngữ phổ biến
 * Nội dung được cập nhật định kỳ
 * Dễ dàng tra cứu và tìm kiếm
-
----
 
 ## 📂 Nội dung chính
 
@@ -44,8 +40,6 @@ Dự án được thiết kế để trở thành tài nguyên tham khảo hàng
 * **Thiết kế hệ thống:** Khả năng mở rộng, Bộ nhớ đệm, Cân bằng tải
 * **Khác:** DevOps, CI/CD, Bảo mật, v.v.
 
----
-
 ## 💡 Vì sao nên dùng Tech Notes Hub?
 
 * Tiết kiệm thời gian nhờ kiến thức tập trung, dễ tra cứu
@@ -53,14 +47,10 @@ Dự án được thiết kế để trở thành tài nguyên tham khảo hàng
 * Phù hợp với ôn luyện phỏng vấn hoặc giải bài tập hàng ngày
 * Là dự án mã nguồn mở, được cộng đồng đóng góp liên tục
 
----
-
 ## 📖 Cách sử dụng
 
 Bạn có thể duyệt các thư mục hoặc dùng tính năng tìm kiếm của GitHub để tra cứu chủ đề hoặc mẫu thiết kế bạn cần.  
 Mỗi ghi chú đều độc lập, bao gồm lý thuyết và mã ví dụ thực tế.
-
----
 
 ## 🤝 Đóng góp
 
@@ -74,19 +64,13 @@ Hãy xem hướng dẫn trong file [CONTRIBUTING_vi.md](CONTRIBUTING_vi.md).
 
 Trước khi gửi pull request, vui lòng đọc kỹ [Quy định nội dung Pull Request](PULL_REQUEST_RULES_vi.md) để biết những gì được chấp nhận. ✅
 
----
-
 ## 📜 Giấy phép
 
 Dự án này được phát hành theo giấy phép MIT. Xem chi tiết trong file [LICENSE](LICENSE).
 
----
-
 ## 🙌 Lời cảm ơn
 
 Cảm ơn tất cả các contributors và cộng đồng mã nguồn mở đã cùng nhau làm phong phú thêm kho kiến thức này mỗi ngày.
-
----
 
 ## 📬 Liên hệ
 

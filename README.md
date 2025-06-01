@@ -2,6 +2,10 @@
 
 **All-in-one technical notes & code snippets** — A centralized knowledge base covering design patterns, algorithms, data structures, AWS, and more. Perfect for learning, quick reference, and daily developer use.
 
+📄 This README is also available in other languages:
+
+- 🇻🇳 [Tiếng Việt](README_vi.md)
+
 ---
 
 ## 📚 Overview

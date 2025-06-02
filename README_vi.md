@@ -66,7 +66,7 @@ Trước khi gửi pull request, vui lòng đọc kỹ [Quy định nội dung P
 
 ## 📜 Giấy phép
 
-Dự án này được phát hành theo giấy phép MIT. Xem chi tiết trong file [LICENSE](LICENSE).
+Dự án này được phát hành theo giấy phép MIT. Xem chi tiết trong file [LICENSE](LICENSE.txt).
 
 ## 🙌 Lời cảm ơn
 

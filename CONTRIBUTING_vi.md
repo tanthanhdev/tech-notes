@@ -89,7 +89,7 @@ Viết commit rõ ràng, có ý nghĩa và dễ hiểu. Cấu trúc đề xuất
 
 ```bash
 git add .
-git commit -m "Thêm ghi chú về thuật toán đồ thị"
+git commit -m "Add notes on graph algorithms"
 git push origin feature/add-graph-algorithms
 ```
 

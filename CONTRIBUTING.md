@@ -1,27 +1,27 @@
 # Contributing to Tech Notes Hub
 
-First off, thank you for taking the time to contribute! 🎉  
-Your help is what makes this project valuable for the whole developer community.
+First of all, thank you for taking the time to contribute! 🎉  
+Your contributions help make this project more valuable for the developer community.
 
 ## 🚀 Ways to Contribute
 
-There are many ways you can contribute:
+There are many ways you can participate:
 
 - 📚 Add new technical notes or topics
 - 💡 Improve existing explanations or code snippets
-- 🐛 Report issues or suggest improvements
-- ✨ Refactor or clean up content formatting
+- 🐛 Report bugs or suggest improvements
+- ✨ Clean up and standardize content formatting
 - 🌍 Translate notes to other languages (coming soon)
 
 ## 📝 Contribution Guidelines
 
-Please follow these guidelines to keep things consistent and easy to manage:
+Please follow these guidelines to ensure consistency and maintainability:
 
 ### 1. Fork the Repository
 
-Click the "Fork" button on the top right of this page. This will create a copy of the repository in your account.
+Click the "Fork" button in the top-right corner of the GitHub page to create a copy of the repository in your account.
 
-### 2. Clone Your Fork
+### 2. Clone to Your Machine
 
 ```bash
 git clone https://github.com/your-username/tech-notes.git
@@ -30,19 +30,59 @@ cd tech-notes-hub
 
 ### 3. Create a New Branch
 
-Use a clear, descriptive branch name for your changes:
+Name your branch clearly, briefly describing what you'll add or modify:
 
 ```bash
 git checkout -b feature/add-graph-algorithms
 ```
 
-### 4. Make Changes
+### 🧩 Branch Naming Rules
 
-* Follow the structure of existing folders and files
-* Use markdown (`.md`) for text-based notes
-* Add code snippets inside fenced code blocks (e.g., \`\`\`python)
-* Keep explanations clear and concise
-* Add inline comments if needed
+Branch names should follow this structure:
+
+```bash
+<change-type>/<brief-description>
+```
+
+| Type       | Meaning                                               | Example                          |
+| ---------- | ----------------------------------------------------- | -------------------------------- |
+| `feature`  | Add new notes/sections                                | `feature/add-docker-notes`       |
+| `fix`      | Fix content errors, typos, examples                   | `fix/typo-in-graph-note`         |
+| `update`   | Update or improve existing notes                      | `update/aws-ec2-note`            |
+| `refactor` | Restructure files/content without changing core ideas | `refactor/reorganize-folders`    |
+| `remove`   | Remove outdated or inappropriate content              | `remove/duplicate-array-example` |
+| `docs`     | Update project documentation like README, CONTRIBUTING| `docs/improve-readme`            |
+
+### 4. Make Your Changes
+
+* Follow the existing folder and file structure
+* Notes should use Markdown format (`.md`)
+* Code should be placed in fenced code blocks, e.g., \`\`\`python
+* Keep explanations concise and clear
+* Add inline comments if necessary
+
+### 💬 Commit Message Rules
+
+Write clear, meaningful, and understandable commit messages. Suggested structure:
+
+```bash
+<change-type>: <brief description>
+```
+
+#### 📌 Examples:
+
+- `feature: add notes on HTTP Status Codes`
+- `fix: correct typos in design-patterns.md`
+- `update: improve binary search examples`
+- `remove: delete duplicate notes in aws folder`
+- `docs: add instructions for creating pull requests`
+
+#### 🧠 Additional Tips:
+
+- You can write in **English or Vietnamese** (be consistent within one pull request)
+- **Avoid vague commits** like: `update 1`, `fix bug`, `test`
+- If related to an issue, add the number at the end:  
+  👉 `fix: typo in aws-note #12`
 
 ### 5. Commit & Push
 
@@ -52,34 +92,35 @@ git commit -m "Add notes on graph algorithms"
 git push origin feature/add-graph-algorithms
 ```
 
-### 6. Open a Pull Request
+### 6. Create a Pull Request
 
-Go to the original repository and click **"Compare & Pull Request"**. Provide:
+Go back to the original repository and click **"Compare & Pull Request"**. Remember to include:
 
-* A clear title and description of your contribution
-* Reference to any related issues (if any)
+* A clear, concise title
+* A detailed description of what you've added/modified
+* References to related issues if applicable
 
-## ✅ PR Review Checklist
+## ✅ Checklist Before Submitting a Pull Request
 
-Before submitting your pull request, make sure:
+Before submitting, ensure:
 
-* [ ] Your content is well-formatted and follows the repo structure
-* [ ] You've checked for typos or broken links
-* [ ] Code snippets (if any) are working and correct
-* [ ] No sensitive or proprietary information is included
+* [ ] Content is properly formatted and follows project structure
+* [ ] No spelling errors or broken links
+* [ ] Code snippets (if any) work correctly
+* [ ] No sensitive information or proprietary assets included
 
-## 📁 Naming & File Guidelines
+## 📁 File & Folder Naming Conventions
 
-* Use lowercase and hyphens for file/folder names: `graph-traversal.md`
-* For non-English versions, use a suffix: `graph-traversal_vi.md`
-* Group related notes into folders (e.g., `algorithms/`, `aws/`, `design-patterns/`)
+* Use lowercase and hyphens for file and folder names: `graph-traversal.md`
+* For translations, add language suffix: `graph-traversal_vi.md`
+* Notes should be grouped by topic folders (e.g., `algorithms/`, `aws/`, `design-patterns/`)
 
 ## 🤝 Code of Conduct
 
-Be respectful, open-minded, and constructive in your interactions. We’re building a friendly and inclusive learning space for all developers.
+Be respectful, open, and constructive in all interactions. We're building a friendly and inclusive learning space for all developers.
 
 ## 📩 Need Help?
 
-Feel free to [open an issue](https://github.com/tech-notes-hub/tech-notes/issues) if you have questions, ideas, or feedback.
+If you have questions or ideas, please [create a new issue](https://github.com/tech-notes-hub/tech-notes/issues).
 
-Thanks for contributing to **Tech Notes Hub**! 🙌
+Thank you again for contributing to **Tech Notes Hub**! 🙌

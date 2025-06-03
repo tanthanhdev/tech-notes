@@ -24,7 +24,7 @@ Click the "Fork" button on the top right of this page. This will create a copy o
 ### 2. Clone Your Fork
 
 ```bash
-git clone https://github.com/your-username/tech-notes-hub.git
+git clone https://github.com/your-username/tech-notes.git
 cd tech-notes-hub
 ```
 

@@ -24,7 +24,7 @@ Nhấn nút "Fork" ở góc trên bên phải trang GitHub để tạo một b�
 ### 2. Clone về máy
 
 ```bash
-git clone https://github.com/ten-cua-ban/tech-notes-hub.git
+git clone https://github.com/ten-cua-ban/tech-notes.git
 cd tech-notes-hub
 ```
 
@@ -33,7 +33,7 @@ cd tech-notes-hub
 Đặt tên nhánh rõ ràng, mô tả ngắn gọn nội dung bạn sẽ thêm hoặc sửa:
 
 ```bash
-git checkout -b feature/them-thuat-toan-do-thi
+git checkout -b feature/add-graph-algorithms
 ```
 
 ### 4. Thực hiện thay đổi
@@ -49,7 +49,7 @@ git checkout -b feature/them-thuat-toan-do-thi
 ```bash
 git add .
 git commit -m "Thêm ghi chú về thuật toán đồ thị"
-git push origin feature/them-thuat-toan-do-thi
+git push origin feature/add-graph-algorithms
 ```
 
 ### 6. Tạo Pull Request
@@ -71,8 +71,8 @@ Trước khi gửi, hãy đảm bảo:
 
 ## 📁 Quy tắc đặt tên file & thư mục
 
-* Tên file và thư mục dùng chữ thường và dấu gạch ngang: `duyet-do-thi.md`
-* Nếu là bản dịch, thêm hậu tố ngôn ngữ: `duyet-do-thi_vi.md`
+* Tên file và thư mục dùng chữ thường và dấu gạch ngang: `graph-traversal.md`
+* Nếu là bản dịch, thêm hậu tố ngôn ngữ: `graph-traversal_vi.md`
 * Ghi chú nên được nhóm theo thư mục chuyên đề (ví dụ: `algorithms/`, `aws/`, `design-patterns/`)
 
 ## 🤝 Quy tắc ứng xử

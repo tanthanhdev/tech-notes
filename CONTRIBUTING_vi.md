@@ -71,18 +71,18 @@ Viết commit rõ ràng, có ý nghĩa và dễ hiểu. Cấu trúc đề xuất
 
 #### 📌 Ví dụ:
 
-- `feature: thêm ghi chú về HTTP Status Codes`
-- `fix: sửa chính tả trong file design-patterns.md`
-- `update: cập nhật ví dụ cho binary search`
-- `remove: xoá ghi chú trùng lặp trong folder aws`
-- `docs: thêm hướng dẫn cách tạo pull request`
+- `feature: add notes on HTTP Status Codes`
+- `fix: correct typos in design-patterns.md`
+- `update: improve binary search examples`
+- `remove: delete duplicate notes in aws folder`
+- `docs: add instructions for creating pull requests`
 
 #### 🧠 Gợi ý thêm:
 
-- Có thể viết bằng **tiếng Việt hoặc tiếng Anh** (nhất quán trong 1 pull request)
-- **Tránh commit mơ hồ** như: `update 1`, `fix lỗi`, `test`
+- Bạn chỉ có thể viết bằng **tiếng Anh**
+- **Tránh commit mơ hồ** như: `update 1`, `fix bug`, `test`
 - Nếu liên quan issue, thêm số vào cuối:  
-  👉 `fix: lỗi chính tả trong aws-note #12`
+  👉 `fix: typo in aws-note #12`
 
 
 ### 5. Commit & Push

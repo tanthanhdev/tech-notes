@@ -39,8 +39,8 @@ Vui lòng đọc kỹ trước khi gửi PR.
 
 - Trình bày **ngắn gọn, dễ hiểu, gần gũi**
 - Sử dụng đúng cấp độ tiêu đề: `#`, `##`, `###`,...
-- Đặt tên file bằng chữ thường, dùng dấu gạch ngang: `cay-nhi-phan.md`
-- File dịch có hậu tố ngôn ngữ: `cay-nhi-phan_vi.md`
+- Đặt tên file bằng chữ thường, dùng dấu gạch ngang: `binary-search.md`
+- File dịch có hậu tố ngôn ngữ: `binary-search_vi.md`
 - Đặt đúng thư mục chuyên đề (`algorithms/`, `design-patterns/`, `aws/`,...)
 
 ## 📢 Lưu ý cuối

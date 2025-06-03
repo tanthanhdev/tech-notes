@@ -79,7 +79,7 @@ Write clear, meaningful, and understandable commit messages. Suggested structure
 
 #### 🧠 Additional Tips:
 
-- You can write in **English or Vietnamese** (be consistent within one pull request)
+- You can only write in **English**
 - **Avoid vague commits** like: `update 1`, `fix bug`, `test`
 - If related to an issue, add the number at the end:  
   👉 `fix: typo in aws-note #12`

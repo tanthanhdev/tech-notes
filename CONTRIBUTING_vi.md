@@ -36,6 +36,23 @@ cd tech-notes-hub
 git checkout -b feature/add-graph-algorithms
 ```
 
+### 🧩 Quy tắc đặt tên nhánh (branch naming)
+
+Tên nhánh nên theo cấu trúc:
+
+```bash
+<loại-thay-đổi>/<mô-tả-ngắn-gọn>
+```
+
+| Loại       | Ý nghĩa                                                  | Ví dụ                            |
+| ---------- | -------------------------------------------------------- | -------------------------------- |
+| `feature`  | Thêm ghi chú/mục mới                                     | `feature/add-docker-notes`       |
+| `fix`      | Sửa lỗi nội dung, chính tả, ví dụ                        | `fix/typo-in-graph-note`         |
+| `update`   | Cập nhật hoặc cải tiến ghi chú hiện có                   | `update/aws-ec2-note`            |
+| `refactor` | Tái cấu trúc lại file/nội dung mà không thay đổi ý chính | `refactor/reorganize-folders`    |
+| `remove`   | Xoá nội dung lỗi thời hoặc không còn phù hợp             | `remove/duplicate-array-example` |
+| `docs`     | Cập nhật tài liệu dự án như README, CONTRIBUTING,...     | `docs/improve-readme`            |
+
 ### 4. Thực hiện thay đổi
 
 * Tuân theo cấu trúc thư mục và file có sẵn
@@ -43,6 +60,30 @@ git checkout -b feature/add-graph-algorithms
 * Mã nguồn nên đặt trong khối mã (fenced code block) ví dụ: \`\`\`python
 * Diễn giải ngắn gọn, rõ ràng
 * Có thể thêm chú thích nội tuyến nếu cần thiết
+
+### 💬 Quy tắc viết commit message
+
+Viết commit rõ ràng, có ý nghĩa và dễ hiểu. Cấu trúc đề xuất:
+
+```bash
+<loại-thay-đổi>:<mô tả ngắn gọn>
+```
+
+#### 📌 Ví dụ:
+
+- `feature: thêm ghi chú về HTTP Status Codes`
+- `fix: sửa chính tả trong file design-patterns.md`
+- `update: cập nhật ví dụ cho binary search`
+- `remove: xoá ghi chú trùng lặp trong folder aws`
+- `docs: thêm hướng dẫn cách tạo pull request`
+
+#### 🧠 Gợi ý thêm:
+
+- Có thể viết bằng **tiếng Việt hoặc tiếng Anh** (nhất quán trong 1 pull request)
+- **Tránh commit mơ hồ** như: `update 1`, `fix lỗi`, `test`
+- Nếu liên quan issue, thêm số vào cuối:  
+  👉 `fix: lỗi chính tả trong aws-note #12`
+
 
 ### 5. Commit & Push
 

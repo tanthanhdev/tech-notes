@@ -49,8 +49,10 @@ Dự án được thiết kế để trở thành tài nguyên tham khảo hàng
 
 ## 📖 Cách sử dụng
 
-Bạn có thể duyệt các thư mục hoặc dùng tính năng tìm kiếm của GitHub để tra cứu chủ đề hoặc mẫu thiết kế bạn cần.  
+Bạn có thể duyệt các thư mục hoặc dùng tính năng tìm kiếm của GitHub để tra cứu chủ đề hoặc mẫu thiết kế bạn cần.
 Mỗi ghi chú đều độc lập, bao gồm lý thuyết và mã ví dụ thực tế.
+
+**Để xem danh mục đầy đủ với tất cả các ghi chú và tài nguyên có sẵn, hãy xem file [SUMMARY.md](SUMMARY.md).**
 
 ## 🤝 Đóng góp
 
@@ -67,6 +69,10 @@ Trước khi gửi pull request, vui lòng đọc kỹ [Quy định nội dung P
 ## 📜 Giấy phép
 
 Dự án này được phát hành theo giấy phép MIT. Xem chi tiết trong file [LICENSE](LICENSE.txt).
+
+## 📝 Changelog
+
+Để biết danh sách chi tiết về tất cả những thay đổi đáng chú ý trong dự án này, vui lòng xem tệp [changelog](changelog_vi.md).
 
 ## 🙌 Lời cảm ơn
 

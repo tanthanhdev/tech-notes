@@ -51,6 +51,8 @@ It's designed to be your go-to resource whether you're preparing for interviews,
 
 Simply browse the folders or use GitHub's search feature to find the topic or pattern you need. Each note is designed to be self-contained with theory and practical code.
 
+**For a complete table of contents with all available notes and resources, check out the [SUMMARY.md](SUMMARY.md) file.**
+
 ## 🤝 Contribution
 
 Contributions are highly welcome! If you want to:
@@ -66,6 +68,10 @@ Before submitting a pull request, make sure to check the [Pull Request Rules](PU
 ## 📜 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE.txt) file for details.
+
+## 📝 Changelog
+
+For a detailed list of all notable changes to this project, please see the [changelog](changelog.md) file.
 
 ## 🙌 Acknowledgements
 

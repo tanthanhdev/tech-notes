@@ -6,6 +6,37 @@ Please read carefully before submitting a PR.
 
 ---
 
+## 📝 Pull Request Template
+
+When submitting a pull request, please include:
+
+### Description
+A clear description of the changes you have made.
+
+### Related Issue
+Link to any related issues: `Fixes #(issue number)`
+
+### Type of Change
+Select the appropriate options:
+- [ ] New content (notes, snippets)
+- [ ] Content improvement (updates, fixes, expansion)
+- [ ] Documentation update
+- [ ] Bug fix (non-breaking change which fixes an issue)
+- [ ] Infrastructure/tooling (CI, scripts, etc.)
+- [ ] Translation (i18n) - specify language: ______
+- [ ] Other (please describe)
+
+### Checklist
+- [ ] My content follows the style guidelines of this project
+- [ ] I have performed a self-review of my own content/code
+- [ ] I have included references/links where appropriate
+- [ ] My changes generate no new warnings or errors
+- [ ] I have checked formatting with markdownlint or similar tools
+- [ ] I have checked that all links are valid
+- [ ] For translations: I've followed the i18n folder structure (i18n/[language_code]/...)
+
+---
+
 ## ✅ Allowed in Pull Requests
 
 - **New content** such as:
@@ -22,8 +53,9 @@ Please read carefully before submitting a PR.
   - Typo and grammar fixes
   - Markdown formatting or link corrections
 - **New language versions**:
-  - Translations with `_vi.md`, `_fr.md`, etc. suffix
+  - Translations in the `i18n/[language_code]/` folder structure (e.g., `i18n/vi/`, `i18n/fr/`)
   - Must match the structure and logic of the original file
+  - Should be referenced in the SUMMARY.md under appropriate language section
 
 ## ❌ Not Allowed in Pull Requests
 
@@ -34,19 +66,21 @@ Please read carefully before submitting a PR.
 - ❌ Personal promotion, affiliate links, or ads
 - ❌ Files with broken structure, invalid markdown, or irrelevant naming
 - ❌ Notes that contain **plagiarized content** (copying from copyrighted materials)
+- ❌ Translations not following the proper i18n folder structure
 
 ## 🔖 Style & Structure Reminders
 
 - Use clear, **conversational but concise** explanations
 - Use correct heading hierarchy (`#`, `##`, `###`, etc.)
 - Name files using lowercase and hyphens: `binary-search.md`
-- For translated files, append language suffix: `binary-search_vi.md`
 - Place content in the appropriate folder (`algorithms/`, `design-patterns/`, etc.)
+- For translations, use the `i18n/[language_code]/` structure, mirroring the main docs structure
+- Update SUMMARY.md to include new content or translations
 
 ## 📢 Final Note
 
-We appreciate your contribution and effort!  
-All pull requests will be reviewed by maintainers before merging.  
+We appreciate your contribution and effort!
+All pull requests will be reviewed by maintainers before merging.
 Feel free to open a discussion issue if you're unsure whether something fits.
 
-Let’s build a high-quality, developer-friendly knowledge base together. 🚀
+Let's build a high-quality, developer-friendly knowledge base together. 🚀

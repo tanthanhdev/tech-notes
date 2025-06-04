@@ -66,7 +66,7 @@ Tên nhánh nên theo cấu trúc:
 Viết commit rõ ràng, có ý nghĩa và dễ hiểu. Cấu trúc đề xuất:
 
 ```bash
-<loại-thay-đổi>:<mô tả ngắn gọn>
+<loại-thay-đổi>: <mô tả ngắn gọn>
 ```
 
 #### 📌 Ví dụ:

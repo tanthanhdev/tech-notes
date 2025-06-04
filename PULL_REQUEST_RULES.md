@@ -31,7 +31,6 @@ Select the appropriate options:
 - [ ] I have performed a self-review of my own content/code
 - [ ] I have included references/links where appropriate
 - [ ] My changes generate no new warnings or errors
-- [ ] I have checked formatting with markdownlint or similar tools
 - [ ] I have checked that all links are valid
 - [ ] For translations: I've followed the i18n folder structure (i18n/[language_code]/...)
 

@@ -31,7 +31,6 @@ Chọn các tùy chọn thích hợp:
 - [ ] Tôi đã tự đánh giá nội dung/mã của mình
 - [ ] Tôi đã bao gồm tài liệu tham khảo/liên kết khi thích hợp
 - [ ] Các thay đổi của tôi không tạo ra cảnh báo hoặc lỗi mới
-- [ ] Tôi đã kiểm tra định dạng bằng markdownlint hoặc công cụ tương tự
 - [ ] Tôi đã kiểm tra rằng tất cả các liên kết đều hợp lệ
 - [ ] Đối với bản dịch: Tôi đã tuân theo cấu trúc thư mục i18n (i18n/[language_code]/...)
 

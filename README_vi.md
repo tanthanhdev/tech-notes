@@ -1,4 +1,4 @@
-# Tech Notes
+# Tech Notes - Technical notes & practical code snippets
 
 **Ghi chú kỹ thuật & mã nguồn tổng hợp** — Một kho kiến thức tập trung, bao gồm Design Patterns, Thuật toán, Cấu trúc dữ liệu, AWS và nhiều chủ đề khác. Hoàn hảo cho việc học tập, tra cứu nhanh, và sử dụng hàng ngày của lập trình viên.
 

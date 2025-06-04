@@ -1,6 +1,6 @@
 # Contributing to Tech Notes Hub
 
-First of all, thank you for taking the time to contribute! 🎉  
+First of all, thank you for taking the time to contribute! 🎉
 Your contributions help make this project more valuable for the developer community.
 
 ## 🚀 Ways to Contribute
@@ -74,6 +74,7 @@ Write clear, meaningful, and understandable commit messages. Suggested structure
 - `feature: add notes on HTTP Status Codes`
 - `fix: correct typos in design-patterns.md`
 - `update: improve binary search examples`
+- `refactor: reorganize folder structure`
 - `remove: delete duplicate notes in aws folder`
 - `docs: add instructions for creating pull requests`
 
@@ -81,7 +82,7 @@ Write clear, meaningful, and understandable commit messages. Suggested structure
 
 - You can only write in **English**
 - **Avoid vague commits** like: `update 1`, `fix bug`, `test`
-- If related to an issue, add the number at the end:  
+- If related to an issue, add the number at the end:
   👉 `fix: typo in aws-note #12`
 
 ### 5. Commit & Push
@@ -111,9 +112,9 @@ Before submitting, ensure:
 
 ## 📁 File & Folder Naming Conventions
 
-* Use lowercase and hyphens for file and folder names: `graph-traversal.md`
-* For translations, add language suffix: `graph-traversal_vi.md`
-* Notes should be grouped by topic folders (e.g., `algorithms/`, `aws/`, `design-patterns/`)
+* Use lowercase and hyphens for file and folder names: `graph_traversal.md` (except for code files like C# using PascalCase such as `GraphTraversal.cs`, or Java using CamelCase like `GraphTraversal.java`)
+* For translations, add language suffix: `graph_traversal_vi.md`
+* Notes should be grouped by docs folders (e.g., `docs/algorithms/`, `docs/aws/`, `docs/design-patterns/`)
 
 ## 🤝 Code of Conduct
 

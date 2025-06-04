@@ -1,6 +1,6 @@
 # Đóng góp vào Tech Notes Hub
 
-Trước hết, xin chân thành cảm ơn bạn đã dành thời gian đóng góp! 🎉  
+Trước hết, xin chân thành cảm ơn bạn đã dành thời gian đóng góp! 🎉
 Sự đóng góp của bạn giúp dự án này trở nên hữu ích hơn cho cộng đồng lập trình viên.
 
 ## 🚀 Cách bạn có thể đóng góp
@@ -74,6 +74,7 @@ Viết commit rõ ràng, có ý nghĩa và dễ hiểu. Cấu trúc đề xuất
 - `feature: add notes on HTTP Status Codes`
 - `fix: correct typos in design-patterns.md`
 - `update: improve binary search examples`
+- `refactor: reorganize folder structure`
 - `remove: delete duplicate notes in aws folder`
 - `docs: add instructions for creating pull requests`
 
@@ -81,7 +82,7 @@ Viết commit rõ ràng, có ý nghĩa và dễ hiểu. Cấu trúc đề xuất
 
 - Bạn chỉ có thể viết bằng **tiếng Anh**
 - **Tránh commit mơ hồ** như: `update 1`, `fix bug`, `test`
-- Nếu liên quan issue, thêm số vào cuối:  
+- Nếu liên quan issue, thêm số vào cuối:
   👉 `fix: typo in aws-note #12`
 
 
@@ -112,9 +113,9 @@ Trước khi gửi, hãy đảm bảo:
 
 ## 📁 Quy tắc đặt tên file & thư mục
 
-* Tên file và thư mục dùng chữ thường và dấu gạch ngang: `graph-traversal.md`
-* Nếu là bản dịch, thêm hậu tố ngôn ngữ: `graph-traversal_vi.md`
-* Ghi chú nên được nhóm theo thư mục chuyên đề (ví dụ: `algorithms/`, `aws/`, `design-patterns/`)
+* Tên file và thư mục dùng chữ thường và dấu gạch ngang: `graph_traversal.md` (trừ code như C# sử dụng PascalCase như `GraphTraversal.cs`, hoặc Java sử dụng CamelCase như `GraphTraversal.java`)
+* Nếu là bản dịch, thêm hậu tố ngôn ngữ: `graph_traversal_vi.md`
+* Ghi chú nên được nhóm theo thư mục trong docs (ví dụ: `docs/algorithms/`, `docs/aws/`, `docs/design-patterns/`)
 
 ## 🤝 Quy tắc ứng xử
 

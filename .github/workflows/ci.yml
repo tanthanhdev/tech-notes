@@ -1,0 +1,29 @@
+name: Markdown CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install -g markdown-link-check
+
+      - name: Check links
+        run: ./tools/check_links.sh
+
+      - name: Generate TOC
+        run: |
+          python3 ./tools/generate_summary.py
+          git diff --exit-code SUMMARY.md || (echo "SUMMARY.md is out of date. Please run ./tools/generate_summary.py and commit the changes" && exit 1)

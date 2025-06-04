@@ -3,11 +3,34 @@ node_modules/
 
 # Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-.env
-.venv/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# C#
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+*.sln.docstates
+.vs/
 
 # VSCode settings
 .vscode/
@@ -42,6 +65,8 @@ coverage.xml
 # dotenv environment files
 .env.local
 .env.*
+.env
+!.env.example
 
 # Ignore generated files and backups
 *.orig

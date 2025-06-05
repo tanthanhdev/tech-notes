@@ -71,8 +71,8 @@ Chọn các tùy chọn thích hợp:
 
 - Trình bày **ngắn gọn, dễ hiểu, gần gũi**
 - Sử dụng đúng cấp độ tiêu đề: `#`, `##`, `###`,...
-- Đặt tên file bằng chữ thường, dùng dấu gạch ngang: `binary-search.md`
-- Đặt đúng thư mục chuyên đề (`algorithms/`, `design-patterns/`, `aws/`,...)
+- Đặt tên file bằng chữ thường, dùng dấu gạch dưới: `binary_search.md`
+- Đặt đúng thư mục docs (`docs/algorithms/`, `docs/design-patterns/`, `docs/aws/`,...)
 - Đối với bản dịch, sử dụng cấu trúc `i18n/[mã_ngôn_ngữ]/`, phản ánh cấu trúc thư mục chính
 - Cập nhật SUMMARY.md để bao gồm nội dung mới hoặc bản dịch
 

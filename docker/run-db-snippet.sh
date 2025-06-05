@@ -70,7 +70,7 @@ esac
 case "$DB_TYPE" in
     mysql)
         DB_HOST="tech-notes-mysql"
-        DB_PORT="3306"
+        DB_PORT="${MYSQL_PORT_EXPOSE:-3306}"
         DB_USER="${MYSQL_USER:-user}"
         DB_PASS="${MYSQL_PASSWORD:-password}"
         DB_NAME="${MYSQL_DATABASE:-tech_notes}"
@@ -78,7 +78,7 @@ case "$DB_TYPE" in
         ;;
     postgres)
         DB_HOST="tech-notes-postgres"
-        DB_PORT="5432"
+        DB_PORT="${POSTGRES_PORT_EXPOSE:-5432}"
         DB_USER="${POSTGRES_USER:-user}"
         DB_PASS="${POSTGRES_PASSWORD:-password}"
         DB_NAME="${POSTGRES_DB:-tech_notes}"
@@ -86,7 +86,7 @@ case "$DB_TYPE" in
         ;;
     mongodb)
         DB_HOST="tech-notes-mongodb"
-        DB_PORT="27017"
+        DB_PORT="${MONGO_PORT_EXPOSE:-27017}"
         DB_USER="${MONGO_USER:-user}"
         DB_PASS="${MONGO_PASSWORD:-password}"
         DB_NAME="${MONGO_INITDB_DATABASE:-tech_notes}"
@@ -94,7 +94,7 @@ case "$DB_TYPE" in
         ;;
     redis)
         DB_HOST="tech-notes-redis"
-        DB_PORT="6379"
+        DB_PORT="${REDIS_PORT_EXPOSE:-6379}"
         DB_PASS="${REDIS_PASSWORD:-}"
         if [ -n "$DB_PASS" ]; then
             DB_CONN_STR="redis://:$DB_PASS@$DB_HOST:$DB_PORT"

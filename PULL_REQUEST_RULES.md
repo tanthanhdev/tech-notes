@@ -71,7 +71,7 @@ Select the appropriate options:
 
 - Use clear, **conversational but concise** explanations
 - Use correct heading hierarchy (`#`, `##`, `###`, etc.)
-- Name files using lowercase and hyphens: `binary-search.md`
+- Name files using lowercase and underscore: `binary_search.md`
 - Place content in the appropriate folder (`algorithms/`, `design-patterns/`, etc.)
 - For translations, use the `i18n/[language_code]/` structure, mirroring the main docs structure
 - Update SUMMARY.md to include new content or translations

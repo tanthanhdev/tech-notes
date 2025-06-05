@@ -1,0 +1,12 @@
+version: '1.0'
+
+services:
+  sqlite:
+    build: .
+    container_name: tech-notes-sqlite
+    volumes:
+      - sqlite_data:/data
+    restart: unless-stopped
+
+volumes:
+  sqlite_data:

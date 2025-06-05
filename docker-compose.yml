@@ -1,0 +1,112 @@
+version: '1.0'
+
+services:
+  # Python environment
+  python:
+    build:
+      context: .
+      dockerfile: docker/environments/python/Dockerfile
+    volumes:
+      - ./snippets:/app/snippets
+    working_dir: /app
+    command: ["--version"]
+
+  # JavaScript/Node.js environment
+  javascript:
+    build:
+      context: .
+      dockerfile: docker/environments/javascript/Dockerfile
+    volumes:
+      - ./snippets:/app/snippets
+    working_dir: /app
+    command: ["--version"]
+
+  # Java environment
+  java:
+    build:
+      context: .
+      dockerfile: docker/environments/java/Dockerfile
+    volumes:
+      - ./snippets:/app/snippets
+    working_dir: /app
+    command: ["/bin/bash", "-c", "java -version"]
+
+  # C/C++ environment
+  cpp:
+    build:
+      context: .
+      dockerfile: docker/environments/cpp/Dockerfile
+    volumes:
+      - ./snippets:/app/snippets
+    working_dir: /app
+    command: ["/bin/bash", "-c", "g++ --version"]
+
+  # Go environment
+  go:
+    build:
+      context: .
+      dockerfile: docker/environments/go/Dockerfile
+    volumes:
+      - ./snippets:/app/snippets
+    working_dir: /app
+    command: ["version"]
+
+  # Rust environment
+  rust:
+    build:
+      context: .
+      dockerfile: docker/environments/rust/Dockerfile
+    volumes:
+      - ./snippets:/app/snippets
+    working_dir: /app
+    command: ["/bin/bash", "-c", "rustc --version"]
+
+  # PHP environment
+  php:
+    build:
+      context: .
+      dockerfile: docker/environments/php/Dockerfile
+    volumes:
+      - ./snippets:/app/snippets
+    working_dir: /app
+    command: ["--version"]
+
+  # C# environment
+  csharp:
+    build:
+      context: .
+      dockerfile: docker/environments/csharp/Dockerfile
+    volumes:
+      - ./snippets:/app/snippets
+    working_dir: /app
+    command: ["/bin/bash", "-c", "dotnet --version"]
+
+  # Ruby environment
+  ruby:
+    build:
+      context: .
+      dockerfile: docker/environments/ruby/Dockerfile
+    volumes:
+      - ./snippets:/app/snippets
+    working_dir: /app
+    command: ["--version"]
+
+  # Shell environment for Linux and DevOps scripts
+  shell:
+    build:
+      context: .
+      dockerfile: docker/environments/shell/Dockerfile
+    volumes:
+      - ./snippets:/app/snippets
+    working_dir: /app
+    command: ["-c", "echo 'Shell environment ready'"]
+
+  # Databricks/PySpark environment
+  databricks:
+    build:
+      context: .
+      dockerfile: docker/environments/databricks/Dockerfile
+    volumes:
+      - ./snippets:/app/snippets
+    working_dir: /app
+    command: ["--version"]

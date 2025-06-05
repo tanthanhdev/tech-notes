@@ -1,0 +1,19 @@
+version: '1.0'
+
+services:
+  mongodb:
+    image: mongo:6
+    container_name: tech-notes-mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGODB_USER:-root}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGODB_PASSWORD:-rootpassword}
+      MONGO_INITDB_DATABASE: ${MONGODB_DATABASE:-tech_notes}
+    ports:
+      - "${MONGODB_PORT_EXPOSE:-27017}:${MONGODB_PORT:-27017}"
+    volumes:
+      - mongodb_data:/data/db
+      - ./init:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+
+volumes:
+  mongodb_data:

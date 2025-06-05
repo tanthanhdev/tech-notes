@@ -62,12 +62,6 @@ htmlcov/
 coverage.xml
 *.cover
 
-# dotenv environment files
-.env.local
-.env.*
-.env
-!.env.example
-
 # Ignore generated files and backups
 *.orig
 *.rej
@@ -82,3 +76,15 @@ public/
 # Ignore personal notes or drafts
 private-notes/
 drafts/
+
+# Docker
+.docker-env
+.docker-cache
+docker-compose.override.yml
+
+# Environment variables
+.env.local
+.env.*
+.env
+!.env.example
+docker/environments/databases/.env

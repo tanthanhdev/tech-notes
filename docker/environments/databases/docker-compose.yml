@@ -1,0 +1,76 @@
+version: '1.0'
+
+services:
+  # MySQL
+  mysql:
+    image: mysql:8.0
+    container_name: tech-notes-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-rootpassword}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-tech_notes}
+      MYSQL_USER: ${MYSQL_USER:-user}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-password}
+    ports:
+      - "${MYSQL_PORT_EXPOSE:-3306}:${MYSQL_PORT:-3306}"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./mysql/init:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+    command: --default-authentication-plugin=mysql_native_password
+
+  # PostgreSQL
+  postgres:
+    image: postgres:15
+    container_name: tech-notes-postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
+      POSTGRES_DB: ${POSTGRES_DB:-tech_notes}
+    ports:
+      - "${POSTGRES_PORT_EXPOSE:-5432}:${POSTGRES_PORT:-5432}"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./postgresql/init:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+
+  # MongoDB
+  mongodb:
+    image: mongo:6
+    container_name: tech-notes-mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME:-root}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD:-rootpassword}
+      MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE:-tech_notes}
+    ports:
+      - "${MONGO_PORT_EXPOSE:-27017}:${MONGO_PORT:-27017}"
+    volumes:
+      - mongodb_data:/data/db
+      - ./mongodb/init:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+
+  # Redis
+  redis:
+    image: redis:7
+    container_name: tech-notes-redis
+    ports:
+      - "${REDIS_PORT_EXPOSE:-6379}:${REDIS_PORT:-6379}"
+    volumes:
+      - redis_data:/data
+      - ./redis/redis.conf:/usr/local/etc/redis/redis.conf
+    command: redis-server /usr/local/etc/redis/redis.conf
+    restart: unless-stopped
+
+  # SQLite
+  sqlite:
+    build: ./sqlite
+    container_name: tech-notes-sqlite
+    volumes:
+      - sqlite_data:/data
+    restart: unless-stopped
+
+volumes:
+  mysql_data:
+  postgres_data:
+  mongodb_data:
+  redis_data:
+  sqlite_data:

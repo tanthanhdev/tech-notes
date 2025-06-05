@@ -54,6 +54,16 @@ Mỗi ghi chú đều độc lập, bao gồm lý thuyết và mã ví dụ th�
 
 **Để xem danh mục đầy đủ với tất cả các ghi chú và tài nguyên có sẵn, hãy xem file [SUMMARY.md](SUMMARY.md).**
 
+### 🐳 Môi Trường Docker
+
+Kho lưu trữ này bao gồm cấu hình Docker để chạy đoạn mã trong nhiều ngôn ngữ lập trình khác nhau. Để chạy một đoạn mã:
+
+```bash
+./docker/run-snippet.sh snippets/path/to/your/snippet.py
+```
+
+Để biết thêm thông tin về cách sử dụng Docker, hãy xem [Docker README](docker/README_vi.md).
+
 ## 🤝 Đóng góp
 
 Mọi đóng góp đều rất hoan nghênh! Nếu bạn muốn:

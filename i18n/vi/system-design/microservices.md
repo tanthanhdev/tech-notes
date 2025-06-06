@@ -1,3 +1,11 @@
+---
+author: Tech Notes Hub
+tags: 'learning, technology, programming'
+update: '2025-06-06'
+date: '2025-06-06'
+title: Microservices
+description: Guide about Microservices
+---
 # Kiến Trúc Microservices
 
 Kiến trúc microservices là một phong cách kiến trúc cấu trúc một ứng dụng như một tập hợp các dịch vụ nhỏ, liên kết lỏng lẻo có thể được phát triển, triển khai và mở rộng độc lập.

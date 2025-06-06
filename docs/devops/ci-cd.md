@@ -1,3 +1,11 @@
+---
+author: Tech Notes Hub
+tags: 'learning, technology, programming'
+update: '2025-06-06'
+date: '2025-06-06'
+title: Ci Cd
+description: Guide about Ci Cd
+---
 # Continuous Integration and Continuous Deployment (CI/CD)
 
 Continuous Integration and Continuous Deployment (CI/CD) is a method to frequently deliver apps to customers by introducing automation into the stages of app development.

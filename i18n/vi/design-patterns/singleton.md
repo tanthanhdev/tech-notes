@@ -1,3 +1,11 @@
+---
+author: Tech Notes Hub
+tags: 'learning, technology, programming'
+update: '2025-06-06'
+date: '2025-06-06'
+title: Singleton
+description: Guide about Singleton
+---
 # Mẫu thiết kế Singleton
 
 Singleton là một mẫu thiết kế tạo đối tượng đảm bảo rằng một lớp chỉ có một thể hiện duy nhất và cung cấp một điểm truy cập toàn cục đến thể hiện đó.

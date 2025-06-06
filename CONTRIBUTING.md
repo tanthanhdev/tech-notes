@@ -113,8 +113,23 @@ Before submitting, ensure:
 ## 📁 File & Folder Naming Conventions
 
 * Use lowercase and hyphens for file and folder names: `graph_traversal.md` (except for code files like C# using PascalCase such as `GraphTraversal.cs`, or Java using CamelCase like `GraphTraversal.java`)
-* For translations, add language suffix: `graph_traversal_vi.md`
+* For translations, add language suffix: `graph_traversal_vi.md`, but no suffix is needed if in the /i18n/[language_code]/ folder
 * Notes should be grouped by docs folders (e.g., `docs/algorithms/`, `docs/aws/`, `docs/design-patterns/`)
+
+### 📂 Code Snippets Structure
+
+Code snippets must follow this directory structure for proper display on the website:
+
+```
+snippets/[category]/[topic-name]/[filename].[extension]
+```
+
+Examples:
+- `snippets/algorithms/graph-traversal/graph_traversal.py`
+- `snippets/devops/ci-cd/ci-cd.sh`
+- `snippets/databases/mongodb/mongodb_query.js`
+
+The `[topic-name]` folder must match the slug of your blog post for snippets to appear automatically. All files inside this folder will be displayed as code snippets on the corresponding blog post page.
 
 ## 🤝 Code of Conduct
 

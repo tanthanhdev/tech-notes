@@ -1,3 +1,11 @@
+---
+author: Tech Notes Hub
+tags: 'learning, technology, programming'
+update: '2025-06-06'
+date: '2025-06-06'
+title: Ci Cd
+description: Guide about Ci Cd
+---
 # Tích Hợp Liên Tục và Triển Khai Liên Tục (CI/CD)
 
 Tích hợp liên tục và triển khai liên tục (CI/CD) là một phương pháp để thường xuyên cung cấp ứng dụng cho khách hàng bằng cách đưa tự động hóa vào các giai đoạn phát triển ứng dụng.

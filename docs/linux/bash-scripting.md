@@ -1,3 +1,11 @@
+---
+author: Tech Notes Hub
+tags: 'learning, technology, programming'
+update: '2025-06-06'
+date: '2025-06-06'
+title: Bash Scripting
+description: Guide about Bash Scripting
+---
 # Bash Scripting
 
 Bash (Bourne Again SHell) is a command language interpreter that is widely used on various operating systems, and is the default shell on most Linux distributions.

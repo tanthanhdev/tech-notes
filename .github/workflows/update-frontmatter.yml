@@ -1,0 +1,60 @@
+name: Update Markdown Frontmatter
+
+on:
+  push:
+    paths:
+      - 'docs/**/*.md'
+      - 'i18n/**/*.md'
+  pull_request:
+    paths:
+      - 'docs/**/*.md'
+      - 'i18n/**/*.md'
+  schedule:
+    # Run at 00:00 UTC every Monday
+    - cron: '0 0 * * 1'
+  # Allow manual runs from GitHub interface
+  workflow_dispatch:
+
+jobs:
+  update-frontmatter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          # Fetch full history to allow creating commits
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install gray-matter glob
+
+      - name: Run update script
+        run: |
+          chmod +x tools/update-frontmatter.js
+          node tools/update-frontmatter.js
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --exit-code || echo "changes=true" >> $GITHUB_OUTPUT
+
+      - name: Commit changes if any
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "chore: update markdown frontmatter [skip ci]"
+
+      - name: Push changes
+        if: steps.git-check.outputs.changes == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}

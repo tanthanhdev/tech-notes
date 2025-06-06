@@ -1,3 +1,11 @@
+---
+author: Tech Notes Hub
+tags: 'learning, technology, programming'
+update: '2025-06-06'
+date: '2025-06-06'
+title: Microservices
+description: Guide about Microservices
+---
 # Microservices Architecture
 
 Microservices architecture is an architectural style that structures an application as a collection of small, loosely coupled services that can be developed, deployed, and scaled independently.

@@ -1,3 +1,11 @@
+---
+author: Tech Notes Hub
+tags: 'learning, technology, programming'
+update: '2025-06-06'
+date: '2025-06-06'
+title: Factory
+description: Guide about Factory
+---
 # Mẫu thiết kế Factory
 
 Mẫu Factory là một mẫu thiết kế tạo đối tượng cung cấp giao diện để tạo đối tượng trong lớp cha, nhưng cho phép các lớp con thay đổi loại đối tượng sẽ được tạo.

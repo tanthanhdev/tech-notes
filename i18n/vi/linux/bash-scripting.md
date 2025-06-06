@@ -1,3 +1,11 @@
+---
+author: Tech Notes Hub
+tags: 'learning, technology, programming'
+update: '2025-06-06'
+date: '2025-06-06'
+title: Bash Scripting
+description: Guide about Bash Scripting
+---
 # Lập Trình Bash
 
 Bash (Bourne Again SHell) là một ngôn ngữ thông dịch lệnh được sử dụng rộng rãi trên nhiều hệ điều hành, và là shell mặc định trên hầu hết các bản phân phối Linux.

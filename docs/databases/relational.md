@@ -1,3 +1,11 @@
+---
+author: Tech Notes Hub
+tags: 'learning, technology, programming'
+update: '2025-06-06'
+date: '2025-06-06'
+title: Relational
+description: Guide about Relational
+---
 # Relational Databases
 
 Relational databases are organized collections of data that store information in tables with rows and columns. They follow the relational model proposed by Edgar F. Codd in 1970, which emphasizes relationships between data entities.

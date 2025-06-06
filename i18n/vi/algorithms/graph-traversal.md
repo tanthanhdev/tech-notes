@@ -1,3 +1,11 @@
+---
+author: Tech Notes Hub
+tags: 'learning, technology, programming'
+update: '2025-06-06'
+date: '2025-06-06'
+title: Graph Traversal
+description: Guide about Graph Traversal
+---
 # Các Thuật Toán Duyệt Đồ Thị (Graph Traversal Algorithms)
 
 Các thuật toán duyệt đồ thị là những kỹ thuật cơ bản được sử dụng để thăm mỗi đỉnh trong một đồ thị. Chúng là nền tảng cho nhiều thuật toán đồ thị phức tạp hơn.

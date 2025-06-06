@@ -1,3 +1,11 @@
+---
+author: Tech Notes Hub
+tags: 'learning, technology, programming'
+update: '2025-06-06'
+date: '2025-06-06'
+title: Singleton
+description: Guide about Singleton
+---
 # Singleton Design Pattern
 
 The Singleton pattern is a creational design pattern that ensures a class has only one instance and provides a global point of access to that instance.

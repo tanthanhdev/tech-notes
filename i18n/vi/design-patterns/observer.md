@@ -1,3 +1,11 @@
+---
+author: Tech Notes Hub
+tags: 'learning, technology, programming'
+update: '2025-06-06'
+date: '2025-06-06'
+title: Observer
+description: Guide about Observer
+---
 # Mẫu thiết kế Observer
 
 Mẫu Observer là một mẫu thiết kế hành vi trong đó một đối tượng, gọi là chủ thể (subject), duy trì danh sách các phụ thuộc của nó, gọi là Observer, và thông báo cho họ tự động về bất kỳ thay đổi trạng thái nào, thường bằng cách gọi một trong các phương thức của họ.

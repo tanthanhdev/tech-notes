@@ -1,3 +1,11 @@
+---
+author: Tech Notes Hub
+tags: 'learning, technology, programming'
+update: '2025-06-06'
+date: '2025-06-06'
+title: Relational
+description: Guide about Relational
+---
 # Cơ sở dữ liệu quan hệ
 
 Cơ sở dữ liệu quan hệ là tập hợp dữ liệu có tổ chức lưu trữ thông tin trong các bảng với hàng và cột. Chúng tuân theo mô hình quan hệ do Edgar F. Codd đề xuất vào năm 1970, nhấn mạnh mối quan hệ giữa các thực thể dữ liệu.

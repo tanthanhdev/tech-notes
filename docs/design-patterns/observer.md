@@ -1,3 +1,11 @@
+---
+author: Tech Notes Hub
+tags: 'learning, technology, programming'
+update: '2025-06-06'
+date: '2025-06-06'
+title: Observer
+description: Guide about Observer
+---
 # Observer Design Pattern
 
 The Observer pattern is a behavioral design pattern where an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods.

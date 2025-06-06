@@ -1,3 +1,11 @@
+---
+author: Tech Notes Hub
+tags: 'learning, technology, programming'
+update: '2025-06-06'
+date: '2025-06-06'
+title: Graph Traversal
+description: Guide about Graph Traversal
+---
 # Graph Traversal Algorithms
 
 Graph traversal algorithms are fundamental techniques used to visit every vertex in a graph. They serve as building blocks for many more complex graph algorithms.
@@ -30,16 +38,16 @@ def bfs(graph, start):
     visited = set([start])
     queue = deque([start])
     result = []
-    
+
     while queue:
         vertex = queue.popleft()
         result.append(vertex)
-        
+
         for neighbor in graph[vertex]:
             if neighbor not in visited:
                 visited.add(neighbor)
                 queue.append(neighbor)
-                
+
     return result
 
 # Example usage
@@ -74,14 +82,14 @@ def dfs_recursive(graph, vertex, visited=None, result=None):
         visited = set()
     if result is None:
         result = []
-        
+
     visited.add(vertex)
     result.append(vertex)
-    
+
     for neighbor in graph[vertex]:
         if neighbor not in visited:
             dfs_recursive(graph, neighbor, visited, result)
-            
+
     return result
 
 # Iterative implementation using a stack
@@ -89,18 +97,18 @@ def dfs_iterative(graph, start):
     visited = set()
     stack = [start]
     result = []
-    
+
     while stack:
         vertex = stack.pop()
         if vertex not in visited:
             visited.add(vertex)
             result.append(vertex)
-            
+
             # Add neighbors in reverse order to simulate recursive DFS
             for neighbor in reversed(graph[vertex]):
                 if neighbor not in visited:
                     stack.append(neighbor)
-                    
+
     return result
 
 # Example usage (same graph as BFS example)
@@ -145,4 +153,4 @@ Space complexity:
 ## References
 
 1. Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2009). Introduction to Algorithms (3rd ed.). MIT Press.
-2. Sedgewick, R., & Wayne, K. (2011). Algorithms (4th ed.). Addison-Wesley Professional. 
+2. Sedgewick, R., & Wayne, K. (2011). Algorithms (4th ed.). Addison-Wesley Professional.

@@ -64,6 +64,27 @@ Kho lưu trữ này bao gồm cấu hình Docker để chạy đoạn mã trong 
 
 Để biết thêm thông tin về cách sử dụng Docker, hãy xem [Docker README](docker/README_vi.md).
 
+### 🛠️ Công cụ tiện ích
+
+Kho lưu trữ này chứa các script tiện ích trong thư mục `/tools` để hỗ trợ việc duy trì tài liệu.
+
+#### Cập nhật Frontmatter cho file Markdown
+
+Script `update-frontmatter.js` tự động cập nhật metadata trong các file Markdown:
+
+```bash
+# Đầu tiên, cài đặt các gói phụ thuộc Node.js
+npm install
+
+# Chạy script (cập nhật tất cả file Markdown)
+node tools/update-frontmatter.js
+
+# Cập nhật một file cụ thể
+node tools/update-frontmatter.js algorithms/sorting-algorithms.md
+```
+
+Để biết thêm thông tin về các công cụ có sẵn, hãy xem [README của Tools](tools/README.md).
+
 ## 🤝 Đóng góp
 
 Mọi đóng góp đều rất hoan nghênh! Nếu bạn muốn:

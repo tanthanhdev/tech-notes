@@ -1,0 +1,16 @@
+{
+  "browseArticles": "Xem các bài viết",
+  "aboutHub": "Giới thiệu",
+  "featuredTopics": {
+    "title": "Chủ đề nổi bật",
+    "description": "Khám phá bộ sưu tập các chủ đề kỹ thuật và hướng dẫn chuyên sâu của chúng tôi",
+    "viewAllCTA": "Xem tất cả bài viết"
+  },
+  "exploreCollection": "Khám phá bộ sưu tập các chủ đề kỹ thuật và hướng dẫn chuyên sâu được tuyển chọn",
+  "hero": {
+    "title": "Tech Notes Hub",
+    "description": "Khám phá các ghi chú kỹ thuật, đoạn mã nguồn và hướng dẫn để nâng cao kỹ năng của bạn",
+    "primaryCTA": "Xem bài viết",
+    "secondaryCTA": "Giới thiệu"
+  }
+}

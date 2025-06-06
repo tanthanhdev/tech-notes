@@ -1,3 +1,11 @@
+---
+author: Tech Notes Hub
+tags: 'learning, technology, programming'
+update: '2025-06-06'
+date: '2025-06-06'
+title: Factory
+description: Guide about Factory
+---
 # Factory Design Pattern
 
 The Factory pattern is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.

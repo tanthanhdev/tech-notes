@@ -1,0 +1,111 @@
+{
+  "site": {
+    "title": "Tech Notes Hub",
+    "description": "Trung tâm chia sẻ kiến thức công nghệ và hướng dẫn kỹ thuật"
+  },
+  "meta": {
+    "description": "Tech Notes Hub - Bộ sưu tập toàn diện các ghi chú kỹ thuật, đoạn mã, thuật toán, mẫu thiết kế và hướng dẫn kỹ thuật cho các nhà phát triển"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "blog": "Bài viết",
+    "about": "Giới thiệu",
+    "menu": "Menu"
+  },
+  "blog": {
+    "readMore": "Đọc Thêm",
+    "publishedOn": "Đăng ngày",
+    "by": "bởi",
+    "categories": "Danh mục",
+    "tags": "Thẻ",
+    "allCategories": "Tất cả Danh mục",
+    "noPostsFound": "Không tìm thấy bài viết nào",
+    "tryDifferentCategory": "Thử danh mục khác",
+    "source": "Nguồn",
+    "sourcedFrom": "Lấy từ",
+    "backToBlog": "Quay lại Blog",
+    "filter": {
+      "category": "Lọc theo danh mục"
+    },
+    "sourceTypes": {
+      "docs": "Tài liệu",
+      "i18n": "Bản dịch"
+    },
+    "page": "Trang",
+    "of": "trên",
+    "showing": "Hiển thị",
+    "posts": "bài viết",
+    "translatedContent": "Có sẵn bằng",
+    "postsFound": "Tìm thấy {{count}} bài viết",
+    "codeSnippets": "Mã Nguồn",
+    "searchPlaceholder": "Tìm kiếm bài viết...",
+    "lastUpdated": "Cập nhật lần cuối"
+  },
+  "languages": {
+    "title": "Ngôn ngữ",
+    "english": "Tiếng Anh",
+    "vietnamese": "Tiếng Việt",
+    "spanish": "Tiếng Tây Ban Nha"
+  },
+  "theme": {
+    "title": "Giao diện",
+    "light": "Sáng",
+    "dark": "Tối",
+    "system": "Hệ thống"
+  },
+  "common": {
+    "search": "Tìm kiếm",
+    "loading": "Đang tải...",
+    "notFound": "Không tìm thấy",
+    "back": "Quay lại"
+  },
+  "footer": {
+    "copyright": "Bản quyền © 2025 Tech Notes Hub. Giấy phép MIT.",
+    "links": {
+      "github": "GitHub",
+      "twitter": "Twitter",
+      "privacy": "Chính sách Bảo mật",
+      "terms": "Điều khoản Dịch vụ"
+    },
+    "madeWith": "Được tạo bởi"
+  },
+  "pages": {
+    "privacy": {
+      "title": "Chính sách Bảo mật",
+      "lastUpdated": "Cập nhật lần cuối",
+      "introduction": "Chính sách Bảo mật này mô tả cách Tech Notes Hub ('chúng tôi', 'của chúng tôi') thu thập, sử dụng và chia sẻ thông tin cá nhân của bạn khi bạn truy cập trang web của chúng tôi.",
+      "informationWeCollect": "Thông tin Chúng tôi Thu thập",
+      "informationWeCollectText": "Khi bạn truy cập trang web của chúng tôi, chúng tôi có thể thu thập một số thông tin về thiết bị của bạn, bao gồm thông tin về trình duyệt web, địa chỉ IP, múi giờ và một số cookie được cài đặt trên thiết bị của bạn.",
+      "howWeUseInformation": "Cách Chúng tôi Sử dụng Thông tin của Bạn",
+      "howWeUseInformationText": "Chúng tôi sử dụng thông tin thu thập được để cải thiện và tối ưu hóa trang web của chúng tôi, đồng thời để hiểu cách người truy cập sử dụng trang web của chúng tôi.",
+      "sharingYourInformation": "Chia sẻ Thông tin của Bạn",
+      "sharingYourInformationText": "Chúng tôi không chia sẻ thông tin cá nhân của bạn với bên thứ ba trừ khi được mô tả trong Chính sách Bảo mật này.",
+      "yourRights": "Quyền của Bạn",
+      "yourRightsText": "Nếu bạn là cư dân của Khu vực Kinh tế Châu Âu, bạn có quyền truy cập thông tin cá nhân mà chúng tôi lưu giữ về bạn và yêu cầu rằng thông tin cá nhân của bạn được chỉnh sửa, cập nhật hoặc xóa bỏ."
+    },
+    "terms": {
+      "title": "Điều khoản Dịch vụ",
+      "lastUpdated": "Cập nhật lần cuối",
+      "introduction": "Các Điều khoản Dịch vụ ('Điều khoản') này quy định việc truy cập và sử dụng trang web Tech Notes Hub của bạn.",
+      "acceptance": "Chấp nhận Điều khoản",
+      "acceptanceText": "Bằng cách truy cập hoặc sử dụng trang web của chúng tôi, bạn đồng ý bị ràng buộc bởi các Điều khoản này và Chính sách Bảo mật của chúng tôi.",
+      "intellectualProperty": "Sở hữu Trí tuệ",
+      "intellectualPropertyText": "Nội dung trên trang web của chúng tôi, bao gồm văn bản, đồ họa, logo và phần mềm, thuộc sở hữu của chúng tôi và được bảo vệ bởi bản quyền và các luật sở hữu trí tuệ khác.",
+      "userConduct": "Ứng xử của Người dùng",
+      "userConductText": "Bạn đồng ý không sử dụng trang web của chúng tôi cho bất kỳ mục đích bất hợp pháp hoặc không được phép nào và tuân thủ tất cả các luật và quy định hiện hành.",
+      "disclaimer": "Tuyên bố Miễn trừ",
+      "disclaimerText": "Trang web của chúng tôi được cung cấp 'nguyên trạng' mà không có bất kỳ bảo đảm nào, rõ ràng hay ngụ ý.",
+      "limitationOfLiability": "Giới hạn Trách nhiệm",
+      "limitationOfLiabilityText": "Chúng tôi sẽ không chịu trách nhiệm cho bất kỳ thiệt hại nào phát sinh từ việc sử dụng trang web của chúng tôi, bao gồm nhưng không giới hạn ở thiệt hại trực tiếp, gián tiếp, ngẫu nhiên, trừng phạt và do hậu quả."
+    }
+  },
+  "categories": {
+    "algorithms": "Thuật toán",
+    "databases": "Cơ sở dữ liệu",
+    "design-patterns": "Mẫu thiết kế",
+    "devops": "DevOps",
+    "linux": "Linux",
+    "system-design": "Thiết kế hệ thống",
+    "testing": "Kiểm thử"
+  }
+}

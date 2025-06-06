@@ -1,0 +1,21 @@
+{
+  "title": "About Tech Notes Hub",
+  "intro": "Tech Notes Hub is a comprehensive platform dedicated to sharing technical knowledge and expertise in various technology domains. Our mission is to provide high-quality, detailed technical notes and guides to help developers, engineers, and technology enthusiasts enhance their skills and knowledge.",
+  "mission": {
+    "title": "Our Mission",
+    "content": "We believe in the power of knowledge sharing and collaborative learning. Our goal is to create a hub where technology professionals can find reliable, in-depth technical content that helps them solve problems, learn new skills, and stay updated with the latest developments in the tech industry."
+  },
+  "content": {
+    "title": "Our Content",
+    "intro": "Our content covers a wide range of technology topics, including but not limited to:"
+  },
+  "community": {
+    "title": "Join Our Community",
+    "content": "We welcome contributions from technology professionals and enthusiasts. If you have expertise in a specific technology area and would like to share your knowledge, please reach out to us."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "content": "If you have any questions, suggestions, or would like to contribute to Tech Notes Hub, please don't hesitate to contact us at",
+    "email": "tanthanhdev@gmail.com"
+  }
+}

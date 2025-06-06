@@ -52,7 +52,7 @@ Chọn các tùy chọn thích hợp:
   - Sửa lỗi chính tả, ngữ pháp
   - Cập nhật liên kết hoặc định dạng Markdown
 - **Bản dịch ghi chú**:
-  - Sử dụng cấu trúc thư mục `i18n/[mã_ngôn_ngữ]/` (ví dụ: `i18n/vi/`, `i18n/fr/`)
+  - Sử dụng cấu trúc thư mục `i18n/[mã_ngôn_ngữ]/` (ví dụ: `i18n/vi/`, `i18n/es/`)
   - Nội dung bám sát logic file gốc
   - Cập nhật trong SUMMARY.md dưới phần ngôn ngữ tương ứng
 

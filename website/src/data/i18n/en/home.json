@@ -1,0 +1,16 @@
+{
+  "browseArticles": "Browse Articles",
+  "aboutHub": "About the Hub",
+  "featuredTopics": {
+    "title": "Featured Topics",
+    "description": "Explore our curated collection of technical topics and in-depth guides",
+    "viewAllCTA": "View All Articles"
+  },
+  "exploreCollection": "Explore our curated collection of technical topics and in-depth guides",
+  "hero": {
+    "title": "Tech Notes Hub",
+    "description": "Discover technical notes, code snippets, and guides to level up your skills",
+    "primaryCTA": "Browse Articles",
+    "secondaryCTA": "About Hub"
+  }
+}

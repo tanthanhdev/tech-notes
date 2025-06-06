@@ -1,0 +1,111 @@
+{
+  "site": {
+    "title": "Tech Notes Hub",
+    "description": "Center for sharing tech knowledge and technical guides"
+  },
+  "meta": {
+    "description": "Tech Notes Hub - A comprehensive collection of tech notes, code snippets, algorithms, design patterns, and technical guides for developers"
+  },
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "about": "About",
+    "menu": "Menu"
+  },
+  "blog": {
+    "readMore": "Read More",
+    "publishedOn": "Published on",
+    "by": "by",
+    "categories": "Categories",
+    "tags": "Tags",
+    "allCategories": "All Categories",
+    "noPostsFound": "No posts found",
+    "tryDifferentCategory": "Try a different category",
+    "source": "Source",
+    "sourcedFrom": "Sourced from",
+    "backToBlog": "Back to Blog",
+    "filter": {
+      "category": "Filter by category"
+    },
+    "sourceTypes": {
+      "docs": "Documentation",
+      "i18n": "Translation"
+    },
+    "page": "Page",
+    "of": "of",
+    "showing": "Showing",
+    "posts": "posts",
+    "translatedContent": "Also available in",
+    "postsFound": "{{count}} posts found",
+    "codeSnippets": "Code Snippets",
+    "searchPlaceholder": "Search blog posts...",
+    "lastUpdated": "Last updated"
+  },
+  "languages": {
+    "title": "Languages",
+    "english": "English",
+    "vietnamese": "Vietnamese",
+    "spanish": "Spanish"
+  },
+  "theme": {
+    "title": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "common": {
+    "search": "Search",
+    "loading": "Loading...",
+    "notFound": "Not found",
+    "back": "Go back"
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 Tech Notes Hub. MIT License.",
+    "links": {
+      "github": "GitHub",
+      "twitter": "Twitter",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "madeWith": "Made with"
+  },
+  "categories": {
+    "algorithms": "Algorithms",
+    "databases": "Databases",
+    "design-patterns": "Design Patterns",
+    "devops": "DevOps",
+    "linux": "Linux",
+    "system-design": "System Design",
+    "testing": "Testing"
+  },
+  "pages": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Last Updated",
+      "introduction": "This Privacy Policy describes how Tech Notes Hub ('we', 'our', or 'us') collects, uses, and shares your personal information when you visit our website.",
+      "informationWeCollect": "Information We Collect",
+      "informationWeCollectText": "When you visit our website, we may collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device.",
+      "howWeUseInformation": "How We Use Your Information",
+      "howWeUseInformationText": "We use the information we collect to improve and optimize our website and to understand how visitors use our website.",
+      "sharingYourInformation": "Sharing Your Information",
+      "sharingYourInformationText": "We do not share your personal information with third parties except as described in this Privacy Policy.",
+      "yourRights": "Your Rights",
+      "yourRightsText": "If you are a resident of the European Economic Area, you have the right to access personal information we hold about you and to ask that your personal information be corrected, updated, or deleted."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "lastUpdated": "Last Updated",
+      "introduction": "These Terms of Service ('Terms') govern your access to and use of Tech Notes Hub website.",
+      "acceptance": "Acceptance of Terms",
+      "acceptanceText": "By accessing or using our website, you agree to be bound by these Terms and our Privacy Policy.",
+      "intellectualProperty": "Intellectual Property",
+      "intellectualPropertyText": "The content on our website, including text, graphics, logos, and software, is owned by us and is protected by copyright and other intellectual property laws.",
+      "userConduct": "User Conduct",
+      "userConductText": "You agree not to use our website for any illegal or unauthorized purpose and to comply with all applicable laws and regulations.",
+      "disclaimer": "Disclaimer",
+      "disclaimerText": "Our website is provided 'as is' without any warranties, expressed or implied.",
+      "limitationOfLiability": "Limitation of Liability",
+      "limitationOfLiabilityText": "We will not be liable for any damages of any kind arising from the use of our website, including, but not limited to direct, indirect, incidental, punitive, and consequential damages."
+    }
+  }
+}

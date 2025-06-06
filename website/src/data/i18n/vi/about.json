@@ -1,0 +1,21 @@
+{
+  "title": "Giới thiệu về Tech Notes Hub",
+  "intro": "Tech Notes Hub là một nền tảng toàn diện dành cho việc chia sẻ kiến thức kỹ thuật và chuyên môn trong các lĩnh vực công nghệ khác nhau. Sứ mệnh của chúng tôi là cung cấp các ghi chú kỹ thuật và hướng dẫn chi tiết, chất lượng cao để giúp các nhà phát triển, kỹ sư và những người đam mê công nghệ nâng cao kỹ năng và kiến thức của họ.",
+  "mission": {
+    "title": "Sứ mệnh của chúng tôi",
+    "content": "Chúng tôi tin vào sức mạnh của việc chia sẻ kiến thức và học tập hợp tác. Mục tiêu của chúng tôi là tạo ra một trung tâm nơi các chuyên gia công nghệ có thể tìm thấy nội dung kỹ thuật đáng tin cậy, sâu sắc giúp họ giải quyết vấn đề, học kỹ năng mới và cập nhật các phát triển mới nhất trong ngành công nghiệp công nghệ."
+  },
+  "content": {
+    "title": "Nội dung của chúng tôi",
+    "intro": "Nội dung của chúng tôi bao gồm nhiều chủ đề công nghệ, bao gồm nhưng không giới hạn ở:"
+  },
+  "community": {
+    "title": "Tham gia cộng đồng của chúng tôi",
+    "content": "Chúng tôi hoan nghênh sự đóng góp từ các chuyên gia và người đam mê công nghệ. Nếu bạn có chuyên môn trong một lĩnh vực công nghệ cụ thể và muốn chia sẻ kiến thức của mình, vui lòng liên hệ với chúng tôi."
+  },
+  "contact": {
+    "title": "Liên hệ với chúng tôi",
+    "content": "Nếu bạn có bất kỳ câu hỏi, đề xuất hoặc muốn đóng góp cho Tech Notes Hub, vui lòng liên hệ với chúng tôi tại",
+    "email": "tanthanhdev@gmail.com"
+  }
+}

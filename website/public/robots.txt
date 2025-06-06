@@ -1,0 +1,25 @@
+# Allow all web crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://technotes.example.com/sitemap.xml
+
+# Disallow admin paths
+User-agent: *
+Disallow: /admin/
+Disallow: /api/
+
+# Special instructions for specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+# Crawl-delay suggestion
+User-agent: *
+Crawl-delay: 10

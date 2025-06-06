@@ -1,0 +1,10 @@
+https://technotes.example.com/en
+https://technotes.example.com/vi
+https://technotes.example.com/en/about
+https://technotes.example.com/vi/about
+https://technotes.example.com/en/blog
+https://technotes.example.com/vi/blog
+https://technotes.example.com/en/privacy
+https://technotes.example.com/vi/privacy
+https://technotes.example.com/en/terms
+https://technotes.example.com/vi/terms

@@ -37,13 +37,13 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     openGraph: {
       title: 'Tech Notes Hub',
       description: description,
-      url: `https://technotes.example.com/${locale}`,
+      url: `https://tech-notes-hub.vercel.app/${locale}`,
       siteName: 'Tech Notes Hub',
       locale: locale,
       type: 'website',
       images: [
         {
-          url: 'https://technotes.example.com/og-image.jpg',
+          url: 'https://tech-notes-hub.vercel.app/og-image.jpg',
           width: 1200,
           height: 630,
           alt: 'Tech Notes Hub',
@@ -57,10 +57,10 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       creator: '@technotes',
     },
     alternates: {
-      canonical: `https://technotes.example.com/${locale}`,
+      canonical: `https://tech-notes-hub.vercel.app/${locale}`,
       languages: {
-        en: 'https://technotes.example.com/en',
-        vi: 'https://technotes.example.com/vi',
+        en: 'https://tech-notes-hub.vercel.app/en',
+        vi: 'https://tech-notes-hub.vercel.app/vi',
       },
     },
   };

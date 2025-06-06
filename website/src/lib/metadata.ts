@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { Locale, locales } from './i18n/settings';
 
-const WEBSITE_URL = 'https://technotes.example.com';
+const WEBSITE_URL = 'https://tech-notes-hub.vercel.app';
 
 interface MetadataProps {
   title?: string;

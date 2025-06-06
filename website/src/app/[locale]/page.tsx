@@ -4,6 +4,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Locale, getTranslationsFromNamespaces } from "@/lib/i18n/settings";
 import { Metadata } from "next";
 import { getContentAsBlogPosts } from "@/lib/content-mapper";
+import { Github } from "lucide-react";
 
 type Params = Promise<{ locale: Locale }>;
 
@@ -47,11 +48,16 @@ export default async function HomePage({ params }: { params: Params }) {
                   {t.hero.primaryCTA}
                 </Button>
               </Link>
-              <Link href={`/${locale}/about`} className="cursor-pointer">
-                <Button variant="outline" size="lg">
-                  {t.hero.secondaryCTA}
+              <a href="https://github.com/tech-notes-hub/tech-notes" target="_blank" rel="noreferrer" className="cursor-pointer">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="flex items-center gap-2 relative overflow-hidden bg-gradient-to-r from-primary/20 to-primary/10 border-primary/50 animate-pulse hover:animate-none hover:bg-primary/20 transition-all duration-300"
+                >
+                  <Github className="h-4 w-4" />
+                  {t.hero.contributeCTA}
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

@@ -3,17 +3,17 @@ const defaultSEOConfig = {
   titleTemplate: '%s - Tech Notes Hub',
   defaultTitle: 'Tech Notes Hub',
   description: 'A collection of tech notes, code snippets, and technical guides for developers',
-  canonical: 'https://technotes.example.com',
+  canonical: 'https://tech-notes-hub.vercel.app',
   openGraph: {
     type: 'website',
     locale: 'vi_VN',
-    url: 'https://technotes.example.com',
+    url: 'https://tech-notes-hub.vercel.app',
     siteName: 'Tech Notes Hub',
     title: 'Tech Notes Hub',
     description: 'A collection of tech notes, code snippets, and technical guides for developers',
     images: [
       {
-        url: 'https://technotes.example.com/og-image.jpg',
+        url: 'https://tech-notes-hub.vercel.app/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Tech Notes Hub',

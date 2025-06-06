@@ -63,6 +63,27 @@ This repository includes Docker configurations for running code snippets in vari
 
 For more information on Docker usage, see the [Docker README](docker/README.md).
 
+### 🛠️ Utilities
+
+This repository contains utility scripts in the `/tools` directory to help maintain the documentation.
+
+#### Updating Markdown Frontmatter
+
+The `update-frontmatter.js` script automatically updates metadata in Markdown files:
+
+```bash
+# First, install Node.js dependencies
+npm install
+
+# Run the script (updates all Markdown files)
+node tools/update-frontmatter.js
+
+# Update a specific file
+node tools/update-frontmatter.js algorithms/sorting-algorithms.md
+```
+
+For more information about available tools, see the [Tools README](tools/README.md).
+
 ## 🤝 Contribution
 
 Contributions are highly welcome! If you want to:

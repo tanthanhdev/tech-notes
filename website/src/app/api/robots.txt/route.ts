@@ -1,4 +1,4 @@
-const WEBSITE_URL = 'https://technotes.example.com';
+const WEBSITE_URL = 'https://tech-notes-hub.vercel.app';
 
 export async function GET() {
   const robotsTxt = `

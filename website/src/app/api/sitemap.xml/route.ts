@@ -1,7 +1,7 @@
 import { getContentAsBlogPosts } from '@/lib/content-mapper';
 import { locales } from '@/lib/i18n/settings';
 
-const WEBSITE_URL = 'https://technotes.example.com';
+const WEBSITE_URL = 'https://tech-notes-hub.vercel.app';
 
 export async function GET() {
   // Fetch all blog posts from all locales

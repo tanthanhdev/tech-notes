@@ -1,6 +1,6 @@
 import { getContentAsBlogPosts } from '@/lib/content-mapper';
 
-const WEBSITE_URL = 'https://technotes.example.com';
+const WEBSITE_URL = 'https://tech-notes-hub.vercel.app';
 const LOCALES = ['en', 'vi'];
 
 function generateSiteMap(posts) {

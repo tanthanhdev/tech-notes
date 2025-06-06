@@ -11,6 +11,7 @@
     "title": "Tech Notes Hub",
     "description": "Khám phá các ghi chú kỹ thuật, đoạn mã nguồn và hướng dẫn để nâng cao kỹ năng của bạn",
     "primaryCTA": "Xem bài viết",
-    "secondaryCTA": "Giới thiệu"
+    "secondaryCTA": "Giới thiệu",
+    "contributeCTA": "Đóng góp trên GitHub"
   }
 }

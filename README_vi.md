@@ -83,6 +83,15 @@ node tools/update-frontmatter.js
 node tools/update-frontmatter.js algorithms/sorting-algorithms.md
 ```
 
+#### Tạo mục lục tự động
+
+Script `generate_summary.py` tự động tạo file SUMMARY.md:
+
+```bash
+# Chạy script để tạo mục lục mới
+python tools/generate_summary.py
+```
+
 Để biết thêm thông tin về các công cụ có sẵn, hãy xem [README của Tools](tools/README.md).
 
 ## 🤝 Đóng góp

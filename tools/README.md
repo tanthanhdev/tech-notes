@@ -33,7 +33,7 @@ A Node.js script that automatically updates the frontmatter (metadata) in all Ma
 
 ```bash
 # Install dependencies if not already installed
-npm install gray-matter glob
+npm install
 
 # Make the script executable
 chmod +x tools/update-frontmatter.js
@@ -54,6 +54,38 @@ node tools/update-frontmatter.js algorithms/sorting-algorithms.md
 # - /docs/algorithms/sorting-algorithms.md
 # - /i18n/vi/algorithms/sorting-algorithms.md
 ```
+
+### `generate_summary.py`
+
+A Python script that automatically generates the `SUMMARY.md` file by scanning the `docs/` directory structure.
+
+#### Features
+
+- Creates a well-structured table of contents
+- Extracts titles from Markdown files when available
+- Organizes content by categories based on directory structure
+- Generates clean, formatted links to all documentation files
+
+#### Requirements
+
+- Python 3.6+
+- No external dependencies (uses only standard library)
+
+#### Usage
+
+```bash
+# Make the script executable (first time only)
+chmod +x tools/generate_summary.py
+
+# Run the script to generate SUMMARY.md
+python tools/generate_summary.py
+```
+
+The script will:
+1. Scan all directories in `/docs`
+2. Extract titles from Markdown files or generate them from filenames
+3. Create a hierarchical table of contents
+4. Write the result to `SUMMARY.md` in the project root
 
 #### Automation
 

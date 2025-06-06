@@ -5,6 +5,7 @@
 ### Algorithms
 
 - [Graph Traversal Algorithms](docs/algorithms/graph-traversal.md)
+- [Sorting Algorithms](docs/algorithms/sorting-algorithms.md)
 
 ### Databases
 

@@ -82,6 +82,15 @@ node tools/update-frontmatter.js
 node tools/update-frontmatter.js algorithms/sorting-algorithms.md
 ```
 
+#### Generating Table of Contents
+
+The `generate_summary.py` script automatically creates the SUMMARY.md file:
+
+```bash
+# Run the script to generate a new table of contents
+python tools/generate_summary.py
+```
+
 For more information about available tools, see the [Tools README](tools/README.md).
 
 ## 🤝 Contribution

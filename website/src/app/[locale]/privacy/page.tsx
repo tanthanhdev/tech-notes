@@ -1,12 +1,15 @@
 import { Metadata } from "next";
 import { Locale, getTranslationsFromNamespaces } from "@/lib/i18n/settings";
 
+type Params = Promise<{ locale: Locale }>;
+
 export async function generateMetadata({
   params
 }: {
-  params: { locale: Locale }
+  params: Params
 }): Promise<Metadata> {
-  const translations = await getTranslationsFromNamespaces(params.locale, ['common']);
+  const { locale } = await params;
+  const translations = await getTranslationsFromNamespaces(locale, ['common']);
   const t = translations.common;
 
   return {
@@ -18,9 +21,10 @@ export async function generateMetadata({
 export default async function PrivacyPolicyPage({
   params
 }: {
-  params: { locale: Locale }
+  params: Params
 }) {
-  const translations = await getTranslationsFromNamespaces(params.locale, ['common']);
+  const { locale } = await params;
+  const translations = await getTranslationsFromNamespaces(locale, ['common']);
   const t = translations.common;
 
   return (
@@ -30,7 +34,7 @@ export default async function PrivacyPolicyPage({
       </h1>
 
       <div className="text-sm text-muted-foreground mb-8">
-        {t.pages?.privacy?.lastUpdated || 'Last Updated'}: {new Date('2025-06-06').toLocaleDateString(params.locale)}
+        {t.pages?.privacy?.lastUpdated || 'Last Updated'}: {new Date('2025-06-06').toLocaleDateString(locale)}
       </div>
 
       <div className="prose prose-neutral dark:prose-invert max-w-none">

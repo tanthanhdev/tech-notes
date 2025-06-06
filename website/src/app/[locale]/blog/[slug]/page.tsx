@@ -11,24 +11,22 @@ import 'highlight.js/styles/github-dark.css';
 import CodeSnippet from "@/components/blog/code-snippet";
 import { generateDefaultMetadata } from '@/lib/metadata';
 
-interface BlogPostPageProps {
-  params: {
-    locale: Locale;
-    slug: string;
-  };
-}
+type Params = Promise<{
+  locale: Locale;
+  slug: string;
+}>;
 
-export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
-  const locale = params.locale as Locale;
-  const allPosts = await getContentAsBlogPosts(params.locale);
-  const post = allPosts.find(post => post.slug === params.slug);
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const allPosts = await getContentAsBlogPosts(locale);
+  const post = allPosts.find(post => post.slug === slug);
 
   if (!post) {
     return generateDefaultMetadata({
       title: 'Post Not Found',
       description: 'The blog post you are looking for does not exist.',
       locale,
-      url: `/blog/${params.slug}`,
+      url: `/blog/${slug}`,
       noIndex: true,
     });
   }
@@ -37,7 +35,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     title: post.title,
     description: post.description || `${post.title} - Tech Notes Hub`,
     locale,
-    url: `/blog/${params.slug}`,
+    url: `/blog/${slug}`,
     ogImage: post.coverImage || '/og-image.jpg',
   });
 }
@@ -59,16 +57,13 @@ export async function generateStaticParams() {
   return params;
 }
 
-export default async function BlogPostPage({
-  params
-}: {
-  params: { locale: Locale; slug: string }
-}) {
-  const allPosts = await getContentAsBlogPosts(params.locale);
-  const post = allPosts.find(post => post.slug === params.slug);
+export default async function BlogPostPage({ params }: { params: Params }) {
+  const { locale, slug } = await params;
+  const allPosts = await getContentAsBlogPosts(locale);
+  const post = allPosts.find(post => post.slug === slug);
 
   // Get translations
-  const translations = await getTranslationsFromNamespaces(params.locale, ['common']);
+  const translations = await getTranslationsFromNamespaces(locale, ['common']);
   const t = translations.common;
 
   if (!post) {
@@ -76,7 +71,7 @@ export default async function BlogPostPage({
   }
 
   // Find available translations for this post
-  const availableTranslations = await findAvailableTranslations(params.slug);
+  const availableTranslations = await findAvailableTranslations(slug);
 
   // Get translated category name if available
   const categoryKey = post.category.toLowerCase().replace(/\s+/g, '-') as keyof typeof t.categories;
@@ -89,7 +84,7 @@ export default async function BlogPostPage({
     : post.sourceType;
 
   // Format dates according to locale
-  const dateFormatter = new Intl.DateTimeFormat(params.locale === 'vi' ? 'vi-VN' : 'en-US', {
+  const dateFormatter = new Intl.DateTimeFormat(locale === 'vi' ? 'vi-VN' : 'en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
@@ -102,8 +97,8 @@ export default async function BlogPostPage({
   const debugInfo = process.env.NODE_ENV === 'development' && (
     <div className="mt-4 p-4 border border-yellow-500 bg-yellow-50 dark:bg-yellow-900/20 rounded-md text-sm">
       <h4 className="font-bold mb-2">Debug Info:</h4>
-      <div><strong>Current Slug:</strong> {params.slug}</div>
-      <div><strong>Current Locale:</strong> {params.locale}</div>
+      <div><strong>Current Slug:</strong> {slug}</div>
+      <div><strong>Current Locale:</strong> {locale}</div>
       <div><strong>Source Type:</strong> {post.sourceType}</div>
       <div><strong>Source Path:</strong> {post.sourcePath}</div>
       <div><strong>Relative Path:</strong> {post.relativePath}</div>
@@ -129,7 +124,7 @@ export default async function BlogPostPage({
   return (
     <div className="container mx-auto px-4 py-8 max-w-3xl">
       <div className="flex justify-between items-center mb-8">
-        <Link href={`/${params.locale}/blog`} className="cursor-pointer">
+        <Link href={`/${locale}/blog`} className="cursor-pointer">
           <Button variant="outline" size="sm">
             {t.blog.backToBlog}
           </Button>
@@ -145,7 +140,7 @@ export default async function BlogPostPage({
                   key={translation.locale}
                   href={`/${translation.locale}/blog/${translation.slug}`}
                   className={`text-sm px-2 py-1 rounded cursor-pointer ${
-                    translation.locale === params.locale
+                    translation.locale === locale
                       ? 'bg-primary text-primary-foreground'
                       : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
                   }`}

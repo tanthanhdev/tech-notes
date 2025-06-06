@@ -1,8 +1,11 @@
 import { Metadata } from "next";
 import { Locale, getTranslationsFromNamespaces } from "@/lib/i18n/settings";
 
-export async function generateMetadata({ params }: { params: { locale: Locale } }): Promise<Metadata> {
-  const translations = await getTranslationsFromNamespaces(params.locale, ['common', 'about']);
+type Params = Promise<{ locale: Locale }>;
+
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+  const { locale } = await params;
+  const translations = await getTranslationsFromNamespaces(locale, ['common', 'about']);
   const about = translations.about;
 
   return {
@@ -11,13 +14,8 @@ export async function generateMetadata({ params }: { params: { locale: Locale } 
   };
 }
 
-interface AboutPageProps {
-  params: {
-    locale: Locale;
-  };
-}
-
-export default async function AboutPage({ params: { locale } }: AboutPageProps) {
+export default async function AboutPage({ params }: { params: Params }) {
+  const { locale } = await params;
   const translations = await getTranslationsFromNamespaces(locale, ['common', 'about']);
   const t = translations.common;
   const about = translations.about;
@@ -35,14 +33,10 @@ export default async function AboutPage({ params: { locale } }: AboutPageProps) 
           </p>
 
           <h2 className="text-2xl font-bold mt-8 mb-4">{about.mission.title}</h2>
-          <p>
-            {about.mission.content}
-          </p>
+          <p>{about.mission.content}</p>
 
           <h2 className="text-2xl font-bold mt-8 mb-4">{about.content.title}</h2>
-          <p>
-            {about.content.intro}
-          </p>
+          <p>{about.content.intro}</p>
           <ul className="list-disc pl-6 my-4">
             {Object.entries(t.categories).map(([key, value]) => (
               <li key={key}>{value}</li>
@@ -50,13 +44,18 @@ export default async function AboutPage({ params: { locale } }: AboutPageProps) 
           </ul>
 
           <h2 className="text-2xl font-bold mt-8 mb-4">{about.community.title}</h2>
-          <p>
-            {about.community.content}
-          </p>
+          <p>{about.community.content}</p>
 
           <h2 className="text-2xl font-bold mt-8 mb-4">{about.contact.title}</h2>
           <p>
-            {about.contact.content} <a href={`mailto:${about.contact.email}`} className="text-blue-600 dark:text-blue-400 hover:underline">{about.contact.email}</a>.
+            {about.contact.content}{' '}
+            <a
+              href={`mailto:${about.contact.email}`}
+              className="text-blue-600 dark:text-blue-400 hover:underline"
+            >
+              {about.contact.email}
+            </a>
+            .
           </p>
         </div>
       </div>

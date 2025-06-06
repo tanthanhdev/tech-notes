@@ -5,8 +5,11 @@ import { Locale, getTranslationsFromNamespaces } from "@/lib/i18n/settings";
 import { Metadata } from "next";
 import { getContentAsBlogPosts } from "@/lib/content-mapper";
 
-export async function generateMetadata({ params }: { params: { locale: Locale } }): Promise<Metadata> {
-  const translations = await getTranslationsFromNamespaces(params.locale, ['common', 'home']);
+type Params = Promise<{ locale: Locale }>;
+
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+  const { locale } = await params;
+  const translations = await getTranslationsFromNamespaces(locale, ['common', 'home']);
 
   return {
     title: translations.common.site.title,
@@ -14,14 +17,8 @@ export async function generateMetadata({ params }: { params: { locale: Locale } 
   };
 }
 
-interface HomePageProps {
-  params: {
-    locale: Locale;
-  };
-}
-
-export default async function HomePage({ params }: HomePageProps) {
-  const { locale } = params;
+export default async function HomePage({ params }: { params: Params }) {
+  const { locale } = await params;
 
   // Get translations for home page
   const translations = await getTranslationsFromNamespaces(locale, ['common', 'home']);

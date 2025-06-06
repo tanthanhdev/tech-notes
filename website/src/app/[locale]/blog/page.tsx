@@ -9,8 +9,11 @@ import { notFound } from "next/navigation";
 import { ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from "lucide-react";
 import Search from "@/components/search";
 
-export async function generateMetadata({ params }: { params: { locale: Locale } }): Promise<Metadata> {
-  const translations = await getTranslationsFromNamespaces(params.locale, ['common']);
+type Params = Promise<{ locale: Locale }>;
+
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+  const { locale } = await params;
+  const translations = await getTranslationsFromNamespaces(locale, ['common']);
 
   return {
     title: `${translations.common.nav.blog} - ${translations.common.site.title}`,
@@ -18,20 +21,16 @@ export async function generateMetadata({ params }: { params: { locale: Locale } 
   };
 }
 
-interface BlogPageProps {
-  params: {
-    locale: Locale;
-  };
-  searchParams?: {
-    category?: string;
-    page?: string;
-  }
-}
-
 const POSTS_PER_PAGE = 20;
 
-export default async function BlogPage({ params, searchParams }: BlogPageProps) {
-  const { locale } = params;
+export default async function BlogPage({
+  params,
+  searchParams
+}: {
+  params: Params,
+  searchParams?: { category?: string; page?: string }
+}) {
+  const { locale } = await params;
   const selectedCategory = searchParams?.category || '';
   const currentPage = searchParams?.page ? parseInt(searchParams.page) : 1;
 

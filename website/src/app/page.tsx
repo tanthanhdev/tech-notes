@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { defaultLocale } from '@/lib/i18n/settings';
-import Image from "next/image";
+import { setCookie } from '@/lib/cookies';
 
 export default function Home() {
   const router = useRouter();
@@ -14,6 +14,8 @@ export default function Home() {
 
     if (savedLocale) {
       // If there is, use the saved locale
+      // Also ensure the cookie is set
+      setCookie('preferredLocale', savedLocale, 365);
       router.push(`/${savedLocale}`);
     } else {
       // If not, try to determine the locale from the browser
@@ -22,6 +24,9 @@ export default function Home() {
 
       // Save to localStorage for future use
       localStorage.setItem('preferredLocale', locale);
+
+      // Also set a cookie for the middleware
+      setCookie('preferredLocale', locale, 365);
 
       // Redirect to the page with the determined locale
       router.push(`/${locale}`);

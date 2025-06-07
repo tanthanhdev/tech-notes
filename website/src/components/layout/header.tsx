@@ -9,6 +9,8 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/s
 import { Menu } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { Locale } from "@/lib/i18n/settings";
+import { useRouter } from "next/navigation";
+import { setCookie } from "@/lib/cookies";
 
 interface HeaderProps {
   translations: any;
@@ -18,9 +20,22 @@ interface HeaderProps {
 export default function Header({ translations, locale }: HeaderProps) {
   const t = translations.common;
   const { theme, setTheme } = useTheme();
+  const router = useRouter();
 
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
+  };
+
+  const handleLanguageChange = (newLocale: Locale) => {
+    // Save the preferred locale to localStorage
+    if (typeof window !== "undefined") {
+      localStorage.setItem('preferredLocale', newLocale);
+
+      // Set a cookie for the middleware (which can't access localStorage)
+      setCookie('preferredLocale', newLocale, 365); // Valid for 1 year
+    }
+
+    router.push(`/${newLocale}`);
   };
 
   return (
@@ -52,24 +67,22 @@ export default function Header({ translations, locale }: HeaderProps) {
                 {theme === "dark" ? <SunIcon size={18} /> : <MoonIcon size={18} />}
               </Button>
               <div className="flex items-center gap-1 ml-2 sm:ml-4 border rounded-full px-1 py-0.5">
-                <Link href="/en" locale="en" className="cursor-pointer">
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className={`rounded-full px-2 sm:px-3 text-xs sm:text-sm h-7 sm:h-8 ${locale === "en" ? "bg-primary text-primary-foreground" : ""}`}
-                  >
-                    EN
-                  </Button>
-                </Link>
-                <Link href="/vi" locale="vi" className="cursor-pointer">
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className={`rounded-full px-2 sm:px-3 text-xs sm:text-sm h-7 sm:h-8 ${locale === "vi" ? "bg-primary text-primary-foreground" : ""}`}
-                  >
-                    VI
-                  </Button>
-                </Link>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className={`rounded-full px-2 sm:px-3 text-xs sm:text-sm h-7 sm:h-8 ${locale === "en" ? "bg-primary text-primary-foreground" : ""}`}
+                  onClick={() => handleLanguageChange("en")}
+                >
+                  EN
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className={`rounded-full px-2 sm:px-3 text-xs sm:text-sm h-7 sm:h-8 ${locale === "vi" ? "bg-primary text-primary-foreground" : ""}`}
+                  onClick={() => handleLanguageChange("vi")}
+                >
+                  VI
+                </Button>
               </div>
             </div>
             <Sheet>
@@ -104,18 +117,20 @@ export default function Header({ translations, locale }: HeaderProps) {
                     <div className="space-y-3">
                       <h3 className="text-sm uppercase text-muted-foreground font-medium">{t.languages?.title || 'Languages'}</h3>
                       <div className="flex flex-col space-y-2">
-                        <Link href="/en" locale="en" className="cursor-pointer">
-                          <div className={`flex items-center px-3 py-2 rounded-lg ${locale === "en" ? "bg-primary/10 text-primary" : ""}`}>
-                            <span className="text-base">{t.languages?.english || 'English'}</span>
-                            {locale === "en" && <span className="ml-auto text-sm bg-primary text-primary-foreground px-2 py-0.5 rounded-full">Active</span>}
-                          </div>
-                        </Link>
-                        <Link href="/vi" locale="vi" className="cursor-pointer">
-                          <div className={`flex items-center px-3 py-2 rounded-lg ${locale === "vi" ? "bg-primary/10 text-primary" : ""}`}>
-                            <span className="text-base">{t.languages?.vietnamese || 'Tiếng Việt'}</span>
-                            {locale === "vi" && <span className="ml-auto text-sm bg-primary text-primary-foreground px-2 py-0.5 rounded-full">Active</span>}
-                          </div>
-                        </Link>
+                        <div
+                          className={`flex items-center px-3 py-2 rounded-lg cursor-pointer ${locale === "en" ? "bg-primary/10 text-primary" : ""}`}
+                          onClick={() => handleLanguageChange("en")}
+                        >
+                          <span className="text-base">{t.languages?.english || 'English'}</span>
+                          {locale === "en" && <span className="ml-auto text-sm bg-primary text-primary-foreground px-2 py-0.5 rounded-full">Active</span>}
+                        </div>
+                        <div
+                          className={`flex items-center px-3 py-2 rounded-lg cursor-pointer ${locale === "vi" ? "bg-primary/10 text-primary" : ""}`}
+                          onClick={() => handleLanguageChange("vi")}
+                        >
+                          <span className="text-base">{t.languages?.vietnamese || 'Tiếng Việt'}</span>
+                          {locale === "vi" && <span className="ml-auto text-sm bg-primary text-primary-foreground px-2 py-0.5 rounded-full">Active</span>}
+                        </div>
                       </div>
                     </div>
                     <div className="space-y-3">

@@ -5,11 +5,12 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import MarkdownContent from "@/components/blog/markdown-content";
 import { getContentAsBlogPosts, findAvailableTranslations } from "@/lib/content-mapper";
-import { Globe, ChevronDown, ChevronUp, Code, CalendarClock } from "lucide-react";
+import { Code, CalendarClock } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import 'highlight.js/styles/github-dark.css';
 import CodeSnippet from "@/components/blog/code-snippet";
 import { generateDefaultMetadata } from '@/lib/metadata';
+import LanguageSwitcher from "@/components/blog/language-switcher";
 
 type Params = Promise<{
   locale: Locale;
@@ -131,25 +132,11 @@ export default async function BlogPostPage({ params }: { params: Params }) {
         </Link>
 
         {availableTranslations.length > 1 && (
-          <div className="flex items-center gap-2">
-            <Globe size={16} className="text-muted-foreground" />
-            <span className="text-sm text-muted-foreground">{t.blog.translatedContent}:</span>
-            <div className="flex gap-2">
-              {availableTranslations.map(translation => (
-                <Link
-                  key={translation.locale}
-                  href={`/${translation.locale}/blog/${translation.slug}`}
-                  className={`text-sm px-2 py-1 rounded cursor-pointer ${
-                    translation.locale === locale
-                      ? 'bg-primary text-primary-foreground'
-                      : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
-                  }`}
-                >
-                  {t.languages[translation.locale as keyof typeof t.languages] || translation.locale.toUpperCase()}
-                </Link>
-              ))}
-            </div>
-          </div>
+          <LanguageSwitcher
+            currentLocale={locale}
+            translations={translations}
+            availableTranslations={availableTranslations}
+          />
         )}
       </div>
 
